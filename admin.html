@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 등록 신청</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <div id="skip" class="center">
+        <a href="index.html">메인페이지 바로가기</a>
+    </div>
+    <section class="login_container">
+        <div class="login_wrap w876 admin_wrap">
+            <div class="admin_box">
+                <h1 class="login_logo_box login_title">관리자 등록 신청</h1>
+                <form action="/" method="GET" class="login_form">
+                    <div class="admin_flexbox">
+                        <div class="admin_item_box">
+                            <div class="input_wrap admin_input_wrap">
+                                <input type="text" class="input_item" required>
+                                <label class="input_label">이메일 (필수)</label>
+                                <span class="input_line"></span>
+                                <span class="error_message"></span>
+                            </div> 
+                            <div class="input_wrap admin_input_wrap">
+                                <input type="text" class="input_item" required>
+                                <label class="input_label">이름 (필수)</label>
+                                <span class="input_line"></span>
+                                <span class="error_message"></span>
+                            </div>
+                            <div class="input_wrap admin_input_wrap">
+                                <input type="password" class="input_item" required>
+                                <label class="input_label">비밀번호 (필수)</label>
+                                <span class="input_line"></span>
+                                <span class="error_message"></span>
+                            </div> 
+                            <div class="input_wrap admin_input_wrap">
+                                <input type="text" class="input_item" required>
+                                <label class="input_label">연락처 (필수)</label>
+                                <button type="button" class="admin_search">인증하기</button>
+                                <span class="input_line"></span>
+                                <span class="error_message"></span>
+                            </div>
+                        </div>
+                        <div class="admin_item_box">
+                            <div class="input_wrap admin_input_wrap">
+                                <input type="text" class="input_item" required>
+                                <label class="input_label">소속 행정기관</label>
+                                <button type="button" class="admin_search">찾기</button>
+                                <span class="input_line"></span>
+                                <span class="error_message"></span>
+                            </div>
+                            <div class="input_wrap admin_input_wrap">
+                                <input type="text" class="input_item" required>
+                                <label class="input_label">부서명</label>
+                                <span class="input_line"></span>
+                                <span class="error_message"></span>
+                            </div>
+                            <div class="input_wrap admin_input_wrap">
+                                <input type="text" class="input_item" required>
+                                <label class="input_label">직급</label>
+                                <span class="input_line"></span>
+                                <span class="error_message"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin_check_wrap">
+                        <div class="check_box admin_check_box">
+                            <div class="admin_check_item">
+                                <input type="checkbox" id="info_check1">
+                                <label for="info_check1">이용약관 동의</label>
+                            </div>
+                            <button type="button" class="admin_read_more terms_btn">자세히보기</button>
+                        </div>
+                        <div class="check_box admin_check_box">
+                            <div class="admin_check_item">
+                                <input type="checkbox" id="info_check2">
+                                <label for="info_check2">개인정보 처리방침 동의</label>
+                            </div>
+                            <button type="button" class="admin_read_more information_btn">자세히보기</button>
+                        </div>
+                    </div>
+                    <button type="button" class="is-button admin_btn">등록 신청 하기</button>
+                    <div class="login_now_box">
+                        <a href="login.html" class="login_now">로그인</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="modal_container">
+        <div class="modal"><span class="blind">모달창</span></div>
+        <div class="modal_wrap terms">
+            <div class="modal_title_box">
+                <h3 class="modal_title">이용약관</h3>
+                <button type="button" class="is-close">닫기</button>
+            </div>
+            <div class="modal_txt">
+                이용약관 내용
+            </div>
+        </div>
+        <div class="modal_wrap information">
+            <div class="modal_title_box">
+                <h3 class="modal_title">개인정보 처리방침</h3>
+                <button type="button" class="is-close">닫기</button>
+            </div>
+            <div class="modal_txt">
+                개인정보 처리방침 내용
+            </div>
+        </div>
+    </div>
+</body>
+</html>

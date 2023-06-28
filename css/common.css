@@ -1,0 +1,203 @@
+@charset 'utf-8';
+
+/* 스킵 */
+#skip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+#skip a {
+    position: absolute;
+    left: 0;
+    top: -2.75rem;
+    width: 100%;
+    color: #fff;
+    font-size:1rem;
+    background-color: var(--key-color-400);
+    line-height: 2.75rem;
+    text-align: center;
+    transition-property: top;
+    transition-duration: 0.3s;
+}
+#skip a:focus, #skip a:active {
+    top: 0;
+}
+
+/* 버튼 */
+.is-link-btn {
+    font-size:0.875rem;
+    font-weight: 700;
+    color:var(--main-txt-color);
+}
+.is-button {
+    width:100%;
+    padding:1rem 0;
+    font-size:0.875rem;
+    font-weight: 700;
+    color:var(--main-txt-color);
+    border-radius: 0.5rem;
+    background-color: var(--key-color-600);
+    text-align: center;
+}
+.is-close {
+    font-size: 0.875rem;
+}
+
+/* 로그인, 관리자, 비밀번호 재설정,찾기 */
+.login_container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/login_background.png') center center / cover no-repeat;
+}
+.login_wrap {
+    position:absolute;
+    top:50%;
+    left:50%;
+    padding:3rem;
+    transform: translate(-50%, -50%);
+    background: var(--box-bg-color);
+}
+.login_box {
+    width: 21.75rem;
+}
+.login_logo_box {
+    text-align: center;
+}
+.input_wrap {
+    position: relative;
+    width: 100%;
+}
+.input_margin {
+    margin:1.5rem 0 1rem 0;
+}
+.input_item {
+    position: relative;
+    width: 100%;
+    height: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.625rem;
+    font-size: 1rem;
+    color:var(--main-txt-color);
+    border: none;
+    border-bottom: 0.063rem solid var(--key-color-400);
+    background: none;
+    z-index: 5;
+}
+.input_item::placeholder { color:var(--main-txt-color); }
+.input_item:focus { outline: none; }
+.input_line {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    background-color: #666;
+    width: 0;
+    height: 0.125rem;
+    border-radius: 0.125rem;
+    transition: 0.5s;
+}
+.input_label {
+    position: absolute;
+    color:var(--main-txt-color);
+    left: 0.625rem;
+    font-size: 1rem;
+    bottom: 0.5rem;
+    transition: all .2s;
+}
+.input_item:focus ~ .input_label, .input_item:valid ~ .input_label {
+    font-size: 0.875rem;
+    bottom: 2rem;
+    color: var(--main-txt-color);
+}
+.input_item:focus ~ .input_line, .input_item:valid ~ .input_line {
+    width: 100%;
+}
+.check_box input {
+    display: none;
+}
+.check_box input + label{
+    cursor:pointer;
+}
+.check_box input + label:before{
+    display:inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    border: 0.063rem solid var(--key-color-400);
+    border-radius: 0.1875rem;
+    vertical-align: middle;
+    content: "";
+}
+.check_box input:checked + label:before{
+    background-color: transparent;
+    border-color: var(--key-color-400);
+    background-image: url('../images/check.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    content: "";
+}
+.check_box label {
+    font-size: 0.875rem;
+    color: var(--main-txt-color);
+}
+.error_message {
+    font-size: 0.75rem;
+    color: var(--danger-color-500);
+}
+.login_title {
+    margin-bottom: 3rem;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+
+
+/* modal */
+.modal_container {
+    display: none;
+}
+body.hidden .modal_container {
+    display:block;
+}
+.modal {
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--box-bg-color);
+    z-index: 100;
+}
+.modal_wrap {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+}
+.modal_title_box {
+    display: flex;
+    gap:12.8rem;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+    background-color: var(--sub-color-600);
+}
+.modal_title {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.modal_txt {
+    padding: 1rem 2rem;
+    color: var(--black-txt-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0 0 0.25rem 0.25rem;
+    background-color: var(--white-bg-color);
+}
+.terms, .information {
+    display: none;
+}
+.terms.active, .information.active {
+    display: block;
+}
