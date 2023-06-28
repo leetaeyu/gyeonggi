@@ -22,12 +22,15 @@
                 </h1>
                 <form action="/" method="GET" class="login_form">
                     <div class="input_wrap">
-                        <input type="text" class="input_item login_input_id" placeholder="User">
+                        <input type="text" class="input_item login_input_id" required>
                         <label class="input_label">User</label>
+                        <span class="input_line"></span>
                         <span class="id_message error_message"></span>
                     </div>
                     <div class="input_wrap input_margin">
-                        <input type="password" class="input_item login_input_pw" placeholder="Password">
+                        <input type="password" class="input_item login_input_pw" required>
+                        <label class="input_label">Password</label>
+                        <span class="input_line"></span>
                         <span class="pw_message error_message"></span>
                     </div>
                     <div class="check_box"> 

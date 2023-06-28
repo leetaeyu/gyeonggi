@@ -71,7 +71,7 @@
     width: 100%;
 }
 .input_margin {
-    margin:1.5rem 0 1rem 0;
+    margin:2.5rem 0 1rem 0;
 }
 .input_item {
     position: relative;
@@ -108,7 +108,7 @@
 }
 .input_item:focus ~ .input_label, .input_item:valid ~ .input_label {
     font-size: 0.875rem;
-    bottom: 2rem;
+    bottom: 1.8rem;
     color: var(--main-txt-color);
 }
 .input_item:focus ~ .input_line, .input_item:valid ~ .input_line {
