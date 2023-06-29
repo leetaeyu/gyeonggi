@@ -100,10 +100,10 @@
 }
 .input_label {
     position: absolute;
-    color:var(--main-txt-color);
-    left: 0.625rem;
-    font-size: 1rem;
+    left: 0;
     bottom: 0.5rem;
+    font-size: 1rem;
+    color:var(--main-txt-color);
     transition: all .2s;
 }
 .input_item:focus ~ .input_label, .input_item:valid ~ .input_label {
@@ -143,6 +143,9 @@
     color: var(--main-txt-color);
 }
 .error_message {
+    position: absolute;
+    left: 0;
+    bottom: -1.2rem;
     font-size: 0.75rem;
     color: var(--danger-color-500);
 }
@@ -154,7 +157,6 @@
 .login_container .is-button:hover {
     background-color: var(--key-color-500);
 }
-
 
 /* modal */
 .modal_container {
@@ -372,3 +374,4 @@ header {
     padding:0.5rem;
     border-radius: 0;
 }
+
