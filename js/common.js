@@ -1,12 +1,13 @@
 $(function(){
+    
+    // $(document).ready(function(){
+        //     $(".input_item").attr("required", false);
+        // })
+        
+    // modal
     const body = $("body");
     const modalClose = $(".modal_title_box .is-close");
 
-    // $(document).ready(function(){
-    //     $(".input_item").attr("required", false);
-    // })
-    
-    // modal
     $(".terms_btn").click(function(){
         $(body).addClass("hidden");
         $(".terms").addClass("active");
@@ -21,76 +22,83 @@ $(function(){
         $(".information").removeClass("active");
     })
 
-    // var emailCheck = document.getElementById("email_check");
-    // var emailError = document.getElementById("email_error");
-    // var emailCheck = $("#email_check");
-    // var emailError = $(".email_Error");
+    // validation
+    const chkEmail = $(".chkEmail");
+    const chkName = $(".chkName");
+    const chkPw = $(".chkPw");
+    const chkPhone = $(".chkPhone");
+    const chkNewPw = $(".chkNewPw");
 
-    // function validateEmail(){
-    //     if(!emailCheck.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-    //         emailError.innerHTML = "테스트" ;
-    //         return false;
-    //     }
-    //     emailError.innerHTML = "";
-    //     return true;
-    // }
+    let emailReg = /^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/;
+    let pwReg = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
+    let nameReg = /^[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]{2,}$/;
+    let phoneReg = /^(010{1})[0-9]{3,4}[0-9]{4}$/;
 
-
-    // $("#email_check").keyup(function(){
-    //     if(!this.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-    //         emailError.innerHTML = "이메일 양식에 맞춰 입력해주세요." ;
-    //         return false;
-    //     }
-    //     emailError.innerHTML = "";
-    //     return true;
-    // })
-
-
-
-
-    // 관리자신청
-    $("#email_check, #login_email_check, #pw_find_email").keyup(function(){
-        if(!this.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-            $(".email_error").html("이메일 양식에 맞춰 입력해주세요.")
+    //email
+    chkEmail.keyup(function(){
+        if(!this.value.match(emailReg)) {
+            $(this).siblings("p").text("이메일 양식에 맞춰 입력해주세요.");
             return false;
-        }
-        $(".email_error").html("");
+        } 
+        $(this).siblings("p").text("");
         return true;
     })
-    $("#password_check, #login_pw_check, #new_pw").keyup(function(){
-        if(!this.value.match(/^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/)) {
-            $(".password_error").html("비밀번호는 최소 8자 이상이며 1개 이상의 특수문자 입력이 필요합니다.");
+    //password
+    chkPw.keyup(function(){
+        if(!this.value.match(pwReg)) {
+            $(this).siblings("p").text("비밀번호는 8~32자 이며 1개 이상의 특수문자 입력이 필요합니다.");
             return false;
         }
-        $(".password_error").html("");
+        $(this).siblings("p").text("");
         return true;
     })
-    $("#name_check, #pw_find_name").keyup(function(){
-        if(!this.value.match(/^[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]{2,}$/)) {
-            $(".name_error").html("이름을 입력해주세요.");
-            return false;
-        }
-        $(".name_error").html("");
-        return true;
-    })
-    $("#phone_check").keyup(function(){
-        if(!this.value.match(/^(010{1})[0-9]{3,4}[0-9]{4}$/)) {
-            $(".phone_error").html("연락처를 입력해주세요.");
-            return false;
-        }
-        $(".phone_error").html("");
-        return true;
-    })
-    $("#new_pw_check").keyup(function(){
-        const newPw = $("#new_pw").val();
-        const newCheck = $("#new_pw_check").val();
+    //pw reset
+    chkNewPw.keyup(function(){
+        const newPw = chkPw.val();
+        const newCheck = chkNewPw.val();
         if(newPw != newCheck){
-            $(".password_newcheck").html("비밀번호가 불일치합니다.");
+            $(this).siblings("p").text("비밀번호가 불일치합니다.");
             return false;
         }
-        $(".password_newcheck").html("");
+        $(this).siblings("p").text("");
         return true;
-        console.log(newPw);
+    })
+    //name
+    chkName.keyup(function(){
+        if(!this.value.match(nameReg)) {
+            $(this).siblings("p").text("이름을 입력해주세요.");
+            return false;
+        }
+        $(this).siblings("p").text("");
+        return true;
+    })
+    //phone
+    chkPhone.keyup(function(){
+        if(!this.value.match(phoneReg)) {
+            $(this).siblings("p").text("연락처는 '-'를 제외하고 입력해 주세요.");
+            return false;
+        }
+        $(this).siblings("p").text("");
+        return true;
+    })
+
+    //비밀번호 재설정
+    const eye = $(".eye_img");
+    const eyeImg = $(".eye_img img")
+
+    eye.on("click", function(e){
+        $(this).find("img").attr("src", function (index, attr) {
+            if (attr.match("_on")){
+                return attr.replace("_on.png", "_off.png");
+            } else {
+                return attr.replace("_off.png", "_on.png");
+            }
+        });
+        if($(this).siblings("input").attr("type") == "password"){
+            $(this).siblings("input").attr("type", "text");
+        } else {
+            $(this).siblings("input").attr("type", "password");
+        }
     })
 })
 

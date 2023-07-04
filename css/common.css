@@ -108,7 +108,7 @@
 }
 .input_item:focus ~ .input_label, .input_item:valid ~ .input_label {
     font-size: 0.875rem;
-    bottom: 1.8rem;
+    bottom: 1.6rem;
     color: var(--main-txt-color);
 }
 .input_item:focus ~ .input_line, .input_item:valid ~ .input_line {
@@ -145,7 +145,7 @@
 .error_message {
     position: absolute;
     left: 0;
-    bottom: -1.2rem;
+    bottom: -1.4rem;
     font-size: 0.75rem;
     color: var(--danger-color-500);
 }
@@ -374,4 +374,3 @@ header {
     padding:0.5rem;
     border-radius: 0;
 }
-
