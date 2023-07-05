@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>관리자 등록 신청</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/common.js"></script>
 </head>
 <body>
     <div id="skip" class="center">
-        <a href="index.html">메인페이지 바로가기</a>
+        <a href="../index.html">메인페이지 바로가기</a>
     </div>
     <section class="login_container">
         <div class="login_wrap w876 admin_wrap">
@@ -21,25 +21,26 @@
                     <div class="admin_flexbox">
                         <div class="admin_item_box">
                             <div class="input_wrap admin_input_wrap">
-                                <input type="text" class="input_item chkEmail" maxlength="64" required>
+                                <input type="text" class="input_item" onkeyup="isEmailValidated(this)" required>
                                 <label class="input_label">이메일 (필수)</label>
                                 <span class="input_line"></span>
                                 <p class="error_message"></p>
                             </div> 
                             <div class="input_wrap admin_input_wrap">
-                                <input type="text" class="input_item chkName" maxlength="4" required>
+                                <input type="text" class="input_item" onkeyup="isNameValidated(this)" required>
                                 <label class="input_label">이름 (필수)</label>
                                 <span class="input_line"></span>
                                 <p class="error_message"></p>
                             </div>
                             <div class="input_wrap admin_input_wrap">
-                                <input type="password" class="input_item chkPw" maxlength="32" required>
+                                <input type="password" class="input_item" onkeyup="isPwValidated(this)" required>
                                 <label class="input_label">비밀번호 (필수)</label>
                                 <span class="input_line"></span>
                                 <p class="error_message"></p>
+                                <button type="button" class="eye_img"><img src="../images/eye_off.png" alt="눈"></button>
                             </div> 
                             <div class="input_wrap admin_input_wrap">
-                                <input type="text" class="input_item chkPhone" maxlength="11" required>
+                                <input type="text" class="input_item" onkeyup="isPhoneValidated(this)" required>
                                 <label class="input_label">연락처 (필수)</label>
                                 <button type="button" class="admin_search">인증하기</button>
                                 <span class="input_line"></span>
