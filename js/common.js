@@ -191,6 +191,12 @@ $(function(){
         }
 
     })
+    
+    //depth2 open, close
+    $(".depth2_open_btn").click(function(){
+        $(this).toggleClass("open");
+        $(".depth2_wrap").toggleClass("close");
+    })
 
 })
 
