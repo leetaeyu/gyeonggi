@@ -643,6 +643,9 @@ main {
     float:left;
   }
 
+  div {
+    display: contents;
+  }
 
 
 
