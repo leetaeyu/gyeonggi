@@ -597,27 +597,26 @@ main {
   }
 
 .selectBox {
-    position: relative;
     padding:0.5rem;
     border-radius: 10px;
     background-color:var(--dark-color-500); 
-
+    position: relative;
+    margin-right:1rem;
   }
   .selectBox .select {
-    width: inherit;
-    height: inherit;
+    padding: 0 0.5rem;
     background: transparent;
     border: 0 none;
     outline: 0 none;
-    padding: 0 5px;
     position: relative;
     z-index: 3; 
+   
   }
   .selectBox .select option {
     background-color:var(--dark-color-500); 
     color: #fff;
-    padding: 3px 0;
-    font-size: 16px;
+    padding: 10px 0;
+    font-size: 1rem;
   }
   .selectBox .icoArrow {
     position: absolute; 
