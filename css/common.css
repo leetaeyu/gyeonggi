@@ -387,7 +387,7 @@ main {
 .main_section {
     width: 100%;
     margin: 4.5rem 2rem 0 2rem;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 /* left-sidebar */
 .snb_container {
@@ -417,3 +417,223 @@ main {
     border-radius: 0.625rem;
     background-color: var(--btn-bg-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 박지훈 css 추가 */
+.main_section table {
+    text-align: center;
+}
+
+.main_section table th {
+    padding:1.9rem 0;
+    background-color:var(--dark-color-500); 
+}
+
+.main_section table td {
+    padding:1.9rem 0;
+    background-color:var(--dark-color-600); 
+    border-bottom: 1px solid #2e2e2e;
+}
+
+.selectBox {
+    position: relative;
+    width: 150px;
+    height: 35px;
+    border-radius: 4px;
+    background-color:var(--dark-color-600); 
+  }
+  .selectBox .select {
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    border: 0 none;
+    outline: 0 none;
+    padding: 0 5px;
+    position: relative;
+    z-index: 3; 
+  }
+  .selectBox .select option {
+    background: lightcoral;
+    color: #fff;
+    padding: 3px 0;
+    font-size: 16px;
+  }
+  .selectBox .icoArrow {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    z-index: 1; 
+    width: 35px; 
+    height: inherit;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .selectBox .icoArrow img {
+    width: 50%;
+    transition: .3s; 
+    /*  부드럽게 회전 */
+  }
+  
+  .selectBox .select:focus + .icoArrow img {
+    transform: rotate(180deg);
+  }
