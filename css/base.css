@@ -38,8 +38,10 @@ button {
     border: 0;
     background-color: transparent;
 }
+/* input background */
 input:-webkit-autofill { -webkit-box-shadow: 0 0 0 30px transparent inset ; -webkit-text-fill-color: #fff; }
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active { transition: background-color 5000s ease-in-out 0s; }
+
 /* 공통클래스 */
 .blind {
     position: absolute;
