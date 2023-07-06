@@ -89,7 +89,7 @@ $(function(){
 			$(_this).siblings("p").text("");
 		}
 
-        //비밀번호 확인
+        //password check
         const chkPw = $(".chkPw");
         const chkNewPw = $(".chkNewPw");
         const newPw = chkPw.val();
@@ -118,7 +118,7 @@ $(function(){
 			return false;
 		}
 		else if (phone.length > 11) {
-            $(_this).siblings("p").text("번호는 11자가 넘을 수 없습니다 .");
+            $(_this).siblings("p").text("번호는 11자가 넘을 수 없습니다.");
 		}
 		else if (!phoneRegExp.test(phone)) {
 			$(_this).siblings("p").text("연락처는 '-'를 제외하고 입력해 주세요.");
@@ -144,6 +144,52 @@ $(function(){
         } else {
             $(this).siblings("input").attr("type", "password");
         }
+    })
+
+
+    //header active
+    pageUrl = window.location.href;
+    $(document).ready(function(){
+        let depth1A = $(".gnb > li");
+        let hD = $(".header");
+
+       //active
+        if (pageUrl.indexOf('index') > -1){
+            $(hD).addClass("ver1")
+            $(depth1A).eq(0).addClass("active");
+            $(depth1A).eq(0).find(".depth2_wrap").addClass("active");
+        } 
+        else if (pageUrl.indexOf('big_data') > -1) {
+            $(hD).addClass("ver1")
+            $(depth1A).eq(1).addClass("active");
+            $(depth1A).eq(1).find(".depth2_wrap").addClass("active");
+        } 
+        else if (pageUrl.indexOf('system') > -1) {
+            $(hD).addClass("ver2")
+            $(depth1A).eq(2).addClass("active");
+            $(depth1A).eq(2).find(".depth2_wrap").addClass("active");
+        } 
+        else if (pageUrl.indexOf('basic') > -1) {
+            $(hD).addClass("ver2")
+            $(depth1A).eq(3).addClass("active");
+            $(depth1A).eq(3).find(".depth2_wrap").addClass("active");
+        }
+        else if (pageUrl.indexOf('facility') > -1) {
+            $(hD).addClass("ver2")
+            $(depth1A).eq(4).addClass("active");
+            $(depth1A).eq(4).find(".depth2_wrap").addClass("active");
+        }
+        else if (pageUrl.indexOf('record') > -1) {
+            $(hD).addClass("ver2")
+            $(depth1A).eq(5).addClass("active");
+            $(depth1A).eq(5).find(".depth2_wrap").addClass("active");
+        }
+        else if (pageUrl.indexOf('stats') > -1) {
+            $(hD).addClass("ver2")
+            $(depth1A).eq(6).addClass("active");
+            $(depth1A).eq(6).find(".depth2_wrap").addClass("active");
+        }
+
     })
 
 })

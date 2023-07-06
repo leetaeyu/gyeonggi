@@ -4,7 +4,11 @@
     --main-txt-color:#fff;
     --white-bg-color:#fff;
     --black-txt-color:#000;
+    --sub-bg-color:rgba(0, 0, 0, 0.88);
+    --side-bar-color:#000;
+    --btn-bg-color:rgba(2, 178, 147, 0.44);
 
+    
     /* 키컬러, 텍스트컬러 */
     --key-color-100:#D6FFF8;
     --key-color-200:#B6FFF2;
