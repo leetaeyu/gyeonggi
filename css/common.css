@@ -592,12 +592,16 @@ main {
     border-bottom: 1px solid #2e2e2e;
 }
 
+.table_btn_wrap { 
+    
+  }
+
 .selectBox {
     position: relative;
-    width: 150px;
-    height: 35px;
-    border-radius: 4px;
-    background-color:var(--dark-color-600); 
+    padding:0.5rem;
+    border-radius: 10px;
+    background-color:var(--dark-color-500); 
+
   }
   .selectBox .select {
     width: inherit;
