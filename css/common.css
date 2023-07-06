@@ -628,12 +628,14 @@ main {
     align-items: center;
   }
   
-  .selectBox .icoArrow img {
-    width: 50%;
-    transition: .3s; 
-    /*  부드럽게 회전 */
+  .table_btn_wrap > div { 
+    float:left; 
   }
-  
-  .selectBox .select:focus + .icoArrow img {
-    transform: rotate(180deg);
+  .table_btn_wrap .search {
+    float:right;
   }
+
+  .table_btn_wrap .search div {
+    float:left;
+  }
+
