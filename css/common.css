@@ -483,12 +483,10 @@ main {
     margin-right: 0.5rem;
 }
 .btn-select {
-    padding:0.5rem 0.625rem 0.5rem 0.625rem;
+    padding:0.5rem 0.625rem;
     background-color:var(--dark-color-500);
     border-radius: 0.625rem;
     font-size: 0.9rem;
-    line-height: 1rem;
-    border-radius: 0.625rem;
     cursor: pointer;
 }
 
@@ -523,7 +521,7 @@ main {
     overflow: hidden;
 }
 .list-member li button:hover, .list-member li button:focus {
-    background-color:#000000;
+    background-color:var(--dark-color-600); 
 }
 .selectBox .select option {
     font-size: 0.9rem;
@@ -532,7 +530,7 @@ main {
 }
 
 .calendar input { 
-    padding:0.5rem 0.625rem 0.5rem 0.625rem;
+    padding:0.5rem 0.625rem;
     border:none;
     border-radius: 0.625rem;
     outline: none;
@@ -570,10 +568,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
  }
 
  .search .search_box2 { 
-    background-color:var(--btn-green-color);
- }
-
- .search .search_box3 { 
     background-color:var(--btn-green-color);
  }
 
