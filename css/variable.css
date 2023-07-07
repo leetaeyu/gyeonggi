@@ -4,7 +4,15 @@
     --main-txt-color:#fff;
     --white-bg-color:#fff;
     --black-txt-color:#000;
+    --sub-bg-color:rgba(0, 0, 0, 0.88);
+    --side-bar-color:#000;
 
+    /* 버튼컬러 */
+    --btn-green-color:rgba(2, 178, 147, 0.44);
+    --btn-dark-color:#3e3e3e;
+
+
+    
     /* 키컬러, 텍스트컬러 */
     --key-color-100:#D6FFF8;
     --key-color-200:#B6FFF2;
@@ -71,6 +79,9 @@
     --dark-color-200:#535353;
     --dark-color-300:#676767;
     --dark-color-400:#828282;
+    --dark-color-500:#2e2e2e;
+    --dark-color-600:#000000;
+
 
     /* 선 색상 */
     --line-color-100:#EFEFEF;

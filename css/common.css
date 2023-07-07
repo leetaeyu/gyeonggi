@@ -44,6 +44,22 @@
 .is-close {
     font-size: 0.875rem;
 }
+.is-darkgreen-btn {
+    display: inline-block;
+    padding:0.5rem 0.75rem;
+    color:var(--main-txt-color);
+    font-size:0.75rem;
+    border-radius: 0.625rem;
+    background-color: var(--btn-green-color);
+}
+.is-dark-btn {
+    display: inline-block;
+    padding:0.5rem 0.75rem;
+    color:var(--main-txt-color);
+    font-size:0.75rem;
+    border-radius: 0.625rem;
+    background-color: var(--btn-dark-color);
+}
 
 /* 로그인, 관리자, 비밀번호 재설정,찾기 */
 .login_container {
@@ -108,7 +124,7 @@
 }
 .input_item:focus ~ .input_label, .input_item:valid ~ .input_label {
     font-size: 0.875rem;
-    bottom: 1.8rem;
+    bottom: 1.6rem;
     color: var(--main-txt-color);
 }
 .input_item:focus ~ .input_line, .input_item:valid ~ .input_line {
@@ -145,7 +161,7 @@
 .error_message {
     position: absolute;
     left: 0;
-    bottom: -1.2rem;
+    bottom: -1.4rem;
     font-size: 0.75rem;
     color: var(--danger-color-500);
 }
@@ -207,6 +223,8 @@ body.hidden .modal_container {
     display: block;
 }
 
+/* sub-background */
+.body-bg {background-color: var(--sub-bg-color);}
 
 /* header */
 header {
@@ -257,10 +275,11 @@ header {
     background-color: var(--sub-color-700);
     text-align: center;
 }
-.nav_conteiner {
+.nav_container {
+    position: relative;
     background-color: var(--hd-bg-color);
 }
-.header.ver1 .nav_conteiner {
+.header.ver1 .nav_container {
     display: inline-block;
     margin:0.25rem 1.5rem;
     border-radius: 0.25rem;
@@ -281,6 +300,9 @@ header {
 .depth1 a:hover {
     color:var(--key-color-400);
 }
+.depth1.active a {
+    color:var(--key-color-400);
+}
 .depth1.active::before {
     position: absolute;
     bottom: -0.1rem;
@@ -291,7 +313,7 @@ header {
 }
 
 /* 2depth */
-.monitoring, .big_data, .system, .basic, .facility, .record, .stats {
+.monitoring, .big_data, .system, .basic, .facility, .record, .stats, .meta_data {
     display:none;
 }
 .depth2_wrap.active {
@@ -304,6 +326,9 @@ header {
 }
 .big_data.active{
     left: -8rem;
+}
+.depth2_wrap.close {
+    display: none;
 }
 .depth2_item_box {
     padding:0.25rem 1rem;
@@ -341,6 +366,36 @@ header {
     width: 1.375rem;
     height: 1.375rem;
 }
+.depth2_open_box {
+    position: absolute;
+    top:0.25rem;
+    right:-2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    background-color: var(--hd-bg-color);
+}
+.depth2_open_btn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.depth2_open_btn::after {
+    position: absolute;
+    left: 0.5rem; 
+    top: 0.25rem; 
+    width: 0.5rem; 
+    height: 0.5rem;
+    border-top: 2px solid var(--main-txt-color); 
+    border-right: 2px solid var(--main-txt-color);
+    transform: rotate(-45deg);
+    transition: 0.3s;
+    content: '';
+}
+.depth2_open_btn.open::after{
+    top:0;
+    transform: rotate(135deg);
+}
 
 /* header ver2 */
 .header.ver2 .header_container {
@@ -366,6 +421,9 @@ header {
 .header.ver2 .stats {
     left:-50.2rem;
 }
+.header.ver2 .meta_data {
+    left:-58.2rem;
+}
 .header.ver2 .gnb{
     padding:0.5rem;
 }
@@ -374,4 +432,327 @@ header {
     padding:0.5rem;
     border-radius: 0;
 }
+
+/* main */
+main {
+    margin-top:4.111rem;
+}
+.main_container {
+    display: flex;
+}
+.main_section {
+    width: 100%;
+    margin: 4.5rem 2rem 0 2rem;
+    /* background-color: antiquewhite; */
+}
+/* left-sidebar */
+.snb_container {
+    width: 100%;
+    max-width: 12rem;
+    height: inherit;
+    margin-top:1.5rem;
+    background-color: var(--side-bar-color);
+}
+.snb_wrap {
+    padding: 3rem 0 0 1.5rem;
+}
+.side_title {
+    font-size:1.25rem;
+    font-weight: 600;
+    color:var(--key-color-400);
+}
+.side_txt {
+    margin:1.5rem 0 2rem 0;
+    font-size:0.75rem;
+    font-weight: 300;
+}
+
+/* 박지훈 css 추가 */
+.table_btn_wrap > div { 
+    margin-bottom: 0.5rem;
+    float:left; 
+}
+.table_btn_wrap .search {
+    float:right;
+}
+.table_btn_wrap .search div {
+    display:inline-block;
+}
+.cont-select {
+    position: relative;
+    margin-right: 0.5rem;
+}
+.btn-select {
+    padding:0.5rem 0.625rem 0.5rem 0.625rem;
+    background-color:var(--dark-color-500);
+    border-radius: 0.625rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+.btn-select .arrow { 
+    padding-left:2.75rem;
+    background:url("../images/arrow.png") no-repeat 90% 55%;
+ }
+
+.list-member {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    border-radius: 0.625rem;
+    overflow: hidden;
+}
+.btn-select.on+.list-member {
+    display: block;
+}
+
+.list-member li button {
+    padding: 0.5rem;
+    width:100%;
+    border: none;
+    background-color:var(--dark-color-500);
+    text-align: left;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.list-member li button:hover, .list-member li button:focus {
+    background-color:#000000;
+}
+.selectBox .select option {
+    font-size: 0.9rem;
+    color: #fff;
+    background-color:var(--dark-color-500); 
+}
+
+.calendar input { 
+    padding:0.5rem 0.625rem 0.5rem 0.625rem;
+    border:none;
+    border-radius: 0.625rem;
+    outline: none;
+    background-color:var(--dark-color-500); 
+    font-size: 0.9rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button {
+        display: none;
+        appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: block;
+    background: url('../images/arrow.png') no-repeat center; 
+}
+
+.search input { 
+    padding:0.5rem 0.625rem 0.5rem 0.625rem;
+    border:none;
+    border-radius: 0.625rem;
+    outline: none;
+    font-size: 0.9rem;
+    margin-right:0.5rem;
+}
+
+.search .search_head {
+    margin-right:0.5rem; 
+    font-size: 0.9rem;
+ }
+
+.search .search_box { 
+    background-color:var(--dark-color-500);
+ }
+
+ .search .search_box2 { 
+    background-color:var(--btn-green-color);
+ }
+
+ .search .search_box3 { 
+    background-color:var(--btn-green-color);
+ }
+
+.main_section table {
+    text-align: center;
+}
+.main_section table th {
+    padding:1.9rem 0;
+    background-color:var(--dark-color-500); 
+}
+.main_section table td {
+    padding:1.9rem 0;
+    background-color:var(--dark-color-600); 
+    border-bottom: 1px solid #2e2e2e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
