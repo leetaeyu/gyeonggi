@@ -614,10 +614,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
   
   .pagination {
+    display: flex;
+    align-items: center;
     padding: 0;
     margin: 2rem 0;
-    list-style: none;
-    display: inline-block;
 }
   
   .pagination li {
@@ -628,11 +628,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .pagination a {
     float: left;
     display: block;
-    font-size: 0.875 rem;
-    text-decoration: none;
+    font-size: 0.875rem;
     padding: 0.3125rem 0.75rem;
     color: #96a0ad;
-    line-height: 1.5;}
+    line-height: 1.5;
+}
   
   .first{
     margin-right: 0.9375rem;}

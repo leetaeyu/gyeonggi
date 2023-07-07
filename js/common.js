@@ -1,4 +1,11 @@
 $(function(){
+
+    $("a").click(function(){
+        if($(this).attr("href") == "#") {
+            return false;
+        }
+    });
+
     // modal
     const body = $("body");
     const modalClose = $(".modal_title_box .is-close");
@@ -205,8 +212,7 @@ $(function(){
 
 
     //select toggle
-    const btn = $('.btn-select');
-    $(btn).on("click", function(e){
+    $('.btn-select').on("click", function(e){
         $(this).siblings(".list-member").toggleClass("on");
     })
 
