@@ -468,39 +468,75 @@ main {
     
   }
 
-.selectBox {
-    padding:0.5rem;
-    border-radius: 10px;
-    background-color:var(--dark-color-500); 
+/* .selectBox {
     position: relative;
     margin-right:1rem;
   }
   .selectBox .select {
-    padding: 0 0.5rem;
-    background: transparent;
+    padding:0.5rem 2.9rem 0.5rem 0.9rem;
+    background:var(--dark-color-500) url("../images/arrow.png") no-repeat 90% 50%;
+    border-radius: 0.8rem;
     border: 0 none;
     outline: 0 none;
     position: relative;
     z-index: 3; 
-   
+    -webkit-appearance:none; 
+    -moz-appearance:none; 
+    appearance:none /* 화살표 없애기 
+  } */
+
+  .cont-select {
+    position: relative;
+    margin-right: 1rem;
   }
+  
+  .btn-select {
+    padding:0.5rem 2.9rem 0.5rem 0.9rem;
+    background:var(--dark-color-500) url("../images/arrow.png") no-repeat 90% 50%;
+    border-radius: 0.625rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+  }
+  
+  .list-member {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    left: 0;
+    border-radius: 0.625rem;
+    overflow: hidden;
+  }
+  
+  .btn-select.on+.list-member {
+    display: block;
+  }
+  
+  .list-member li button {
+    width:100%;
+    padding: 0.5rem;
+    border: none;
+    background-color:var(--dark-color-500);
+    cursor: pointer;
+    text-align: left;
+    font-size: 0.8rem;
+    /* 말줄임 */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .list-member li button:hover,
+  .list-member li button:focus {
+    background-color:#000000;
+  }
+
   .selectBox .select option {
     background-color:var(--dark-color-500); 
     color: #fff;
-    padding: 10px 0;
     font-size: 1rem;
-  }
-  .selectBox .icoArrow {
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    z-index: 1; 
-    width: 35px; 
-    height: inherit;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .table_btn_wrap > div { 
@@ -513,6 +549,16 @@ main {
   .table_btn_wrap .search div {
     float:left;
   }
+
+  .calendar input { 
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.8rem;
+    border:none;
+    outline: none;
+    background-color:var(--dark-color-500); 
+   }
+
+   
 
 
 
