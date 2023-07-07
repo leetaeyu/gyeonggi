@@ -60,7 +60,6 @@
     border-radius: 0.625rem;
     background-color: var(--btn-dark-color);
 }
-
 /* 로그인, 관리자, 비밀번호 재설정,찾기 */
 .login_container {
     position: relative;
@@ -457,9 +456,19 @@ main {
     padding: 3rem 0 0 1.5rem;
 }
 .side_title {
+    position: relative;
     font-size:1.25rem;
     font-weight: 600;
     color:var(--key-color-400);
+}
+.side_title::after {
+    position: absolute;
+    bottom:-0.5rem;
+    left:0;
+    width: 1.25rem;
+    height: 0.063rem;
+    background-color: var(--white-bg-color);
+    content: '';
 }
 .side_txt {
     margin:1.5rem 0 2rem 0;
