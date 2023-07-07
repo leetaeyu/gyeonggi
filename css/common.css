@@ -593,8 +593,72 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-bottom: 1px solid #2e2e2e;
 }
 
-
-
+.page{
+    text-align: center; 
+}
+  
+  .pagination {
+    padding: 0;
+    margin: 2rem 0;
+    list-style: none;
+    display: inline-block;
+}
+  
+  .pagination li {
+    display: inline;
+    text-align: center;
+}
+  
+  .pagination a {
+    float: left;
+    display: block;
+    font-size: 0.875 rem;
+    text-decoration: none;
+    padding: 0.3125rem 0.75rem;
+    color: #96a0ad;
+    line-height: 1.5;}
+  
+  .first{
+    margin-right: 0.9375rem;}
+  
+  .last{
+    margin-left: 0.9375rem;}
+  
+  .first:hover, .last:hover, .left:hover, .right:hover{
+    color: #2e9cdf;}
+  
+  .pagination a.active {
+    cursor: default;
+    color: #ffffff;}
+  
+  .pagination a:active {
+    outline: none;
+   }
+  
+  .pagination .num {
+    margin-left: 0.1875rem;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;}
+  
+  .pagination .num:hover {
+    background-color: #2e9cdf;
+    color: #ffffff;}
+  
+  .pagination .num.active, .pagination .num:active {
+    background-color: #2e9cdf;
+    cursor: pointer;}
+  
+  .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid blue; }
 
 
 
