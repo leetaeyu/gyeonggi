@@ -279,7 +279,7 @@
                     </div>
                     <div class="group">
                         <div class="group_text">그룹 사용자 (필수)</div>
-                        <input type="text" placeholder="그룹에 속할 사용자를 선택하세요." class="input_same group_box">
+                        <input type="text" placeholder="그룹에 속할 사용자를 선택하세요." class="input_same group_box"> <input type="button" value="찾기" class="on_input_same" id="btn-modal">
                     </div>
                     <div class="group">
                         <div class="group_text">그룹 설정 (필수)</div>
@@ -295,12 +295,43 @@
                         </div>
                     </div>
                     <div class="group">
-                        <input type="button" value="검색" class="on_input_same search_box2">
-                        <input type="button" value="등록하기" class="input_same">
+                        <input type="button" value="등록" class="on_input_same search_box2">
+                        <input type="button" value="취소" class="input_same">
                     </div>
                 </div>
             </section>
+
+
+           
+            <div id="modal" class="modal-overlay">
+                <div class="modal-wrap">
+                    <div class="title">
+                        <h2>대상 찾기</h2>
+                        <div class="modal-close"></div>
+                    </div>
+                    
+                    <div class="madal-content">
+                        <div class="modal-search">
+                            <div class="cont-select">
+                                <button type="button" class="modal-btn-select modal-input">전체<i class="arrow_down"></i></button>
+                                <ul class="list-member">
+                                  <li><button type="button">모잠비크</button></li>
+                                  <li><button type="button">스리랑카</button></li>
+                                  <li><button type="button">전주밥차</button></li>
+                                  <li><button type="button">사인오케이</button></li>
+                                  <li><button type="button">판교</button></li>
+                                </ul>
+                            </div>
+                            <input type="text" placeholder="그룹 설명을 입력하세요." class="modal-input">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <script>
+       
+    </script>
 </body>
 </html>
