@@ -259,10 +259,11 @@ header {
     background-color: var(--sub-color-700);
     text-align: center;
 }
-.nav_conteiner {
+.nav_container {
+    position: relative;
     background-color: var(--hd-bg-color);
 }
-.header.ver1 .nav_conteiner {
+.header.ver1 .nav_container {
     display: inline-block;
     margin:0.25rem 1.5rem;
     border-radius: 0.25rem;
@@ -281,6 +282,9 @@ header {
     color:var(--main-txt-color);
 }
 .depth1 a:hover {
+    color:var(--key-color-400);
+}
+.depth1.active a {
     color:var(--key-color-400);
 }
 .depth1.active::before {
@@ -306,6 +310,9 @@ header {
 }
 .big_data.active{
     left: -8rem;
+}
+.depth2_wrap.close {
+    display: none;
 }
 .depth2_item_box {
     padding:0.25rem 1rem;
@@ -423,7 +430,7 @@ main {
 .snb_container {
     width: 100%;
     max-width: 12rem;
-    height: 45rem;
+    height: inherit;
     margin-top:1.5rem;
     background-color: var(--side-bar-color);
 }
