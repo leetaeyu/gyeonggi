@@ -65,8 +65,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .flex_center {
     display: flex;
     align-items: center;
-}
-/* 컬럼설계 */
+}/* 컬럼설계 */
 .col-2 > * {float:left; width:50%;}
 .col-3 > * {float:left; width:33.3333%;}
 .col-4 > * {float:left; width:25%;}
