@@ -268,163 +268,37 @@
             <section class="main_section">
                 <h2 class="blind">사용자 관리</h2>
 
-                <div class="table_btn_wrap">
-                    <div class="cont-select">
-                        <button type="button" class="btn-select input_same">상태 전체 <i class="arrow"></i></button>
-                        <ul class="list-member">
-                          <li><button type="button">모잠비크</button></li>
-                          <li><button type="button">스리랑카</button></li>
-                          <li><button type="button">전주밥차</button></li>
-                          <li><button type="button">사인오케이</button></li>
-                          <li><button type="button">판교</button></li>
-                        </ul>
+                <div class="contents_wrap">
+                    <div class="group">
+                        <div class="group_text">그룹명 (필수)</div>
+                        <input type="text" placeholder="그룹명을 입력하세요." class="input_same group_box">
                     </div>
-
-                    <div class="calendar">
-                        <form>
-                            <input type="date" value="2023-07-06" class="input_same">&nbsp; ~ &nbsp;<input type="date" value="2023-07-06" class="input_same">
-                        </form>
+                    <div class="group">
+                        <div class="group_text">그룹설명</div>
+                        <input type="text" placeholder="그룹 설명을 입력하세요." class="input_same group_box">
                     </div>
-
-                    <div class="search">
-                        <form>
-                            <div class="search_head">그룹명</div> 
-                            <input type="text" placeholder="검색어를 입력하세요." class="input_same search_box">
-                            <input type="button" value="검색" class="input_same search_box2">
-                            <input type="button" value="등록하기" class="input_same search_box2">
-                        </form>
+                    <div class="group">
+                        <div class="group_text">그룹 사용자 (필수)</div>
+                        <input type="text" placeholder="그룹에 속할 사용자를 선택하세요." class="input_same group_box">
+                    </div>
+                    <div class="group">
+                        <div class="group_text">그룹 설정 (필수)</div>
+                        <div class="cont-select">
+                            <button type="button" class="input_same btn-select">권한을 선택해 주세요. <i class="arrow"></i></button>
+                            <ul class="list-member">
+                              <li><button type="button">모잠비크</button></li>
+                              <li><button type="button">스리랑카</button></li>
+                              <li><button type="button">전주밥차</button></li>
+                              <li><button type="button">사인오케이</button></li>
+                              <li><button type="button">판교</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <input type="button" value="검색" class="on_input_same search_box2">
+                        <input type="button" value="등록하기" class="input_same">
                     </div>
                 </div>
-                
-                <table>
-                    <colgroup>
-                        <col style="width:14%">
-                        <col style="width:14%">
-                        <col style="width:14%">
-                        <col style="width:14%">
-                        <col style="width:14%">
-                        <col style="width:14%">
-                        <col style="width:14%">
-                    </colgroup>
-                    <tr>
-                      <th scope="col">번호</td>
-                      <th scope="col">그룹명</td>
-                      <th scope="col">권한</td>
-                      <th scope="col">그룹원 수</td>
-                      <th scope="col">권한</td>
-                      <th scope="col">수정일</td>
-                      <th scope="col">등록일</td>
-                    </tr>
-                    <tr>
-                      <td>10</td>
-                      <td>성남시</td>
-                      <td>교통정보센터장</td>
-                      <td>7</td>
-                      <td>정지</td>
-                      <td>2023.12.31</td>
-                      <td>2023.12.31</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>성남시</td>
-                        <td>교통정보센터장</td>
-                        <td>7</td>
-                        <td>정지</td>
-                        <td>2023.12.31</td>
-                        <td>2023.12.31</td>
-                      </tr>
-                      <tr>
-                        <td>8</td>
-                        <td>성남시</td>
-                        <td>교통정보센터장</td>
-                        <td>7</td>
-                        <td>정지</td>
-                        <td>2023.12.31</td>
-                        <td>2023.12.31</td>
-                      </tr>
-                      <tr>
-                        <td>7</td>
-                        <td>성남시</td>
-                        <td>교통정보센터장</td>
-                        <td>7</td>
-                        <td>정지</td>
-                        <td>2023.12.31</td>
-                        <td>2023.12.31</td>
-                      </tr>
-                      <tr>
-                        <td>6</td>
-                        <td>성남시</td>
-                        <td>교통정보센터장</td>
-                        <td>7</td>
-                        <td>정지</td>
-                        <td>2023.12.31</td>
-                        <td>2023.12.31</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>성남시</td>
-                        <td>교통정보센터장</td>
-                        <td>7</td>
-                        <td>정지</td>
-                        <td>2023.12.31</td>
-                        <td>2023.12.31</td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>성남시</td>
-                        <td>교통정보센터장</td>
-                        <td>7</td>
-                        <td>정지</td>
-                        <td>2023.12.31</td>
-                        <td>2023.12.31</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>성남시</td>
-                        <td>교통정보센터장</td>
-                        <td>7</td>
-                        <td>정지</td>
-                        <td>2023.12.31</td>
-                        <td>2023.12.31</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>성남시</td>
-                        <td>교통정보센터장</td>
-                        <td>7</td>
-                        <td>정지</td>
-                        <td>2023.12.31</td>
-                        <td>2023.12.31</td>
-                      </tr>
-                      <tr>
-                        <td>1</td>
-                        <td>성남시</td>
-                        <td>교통정보센터장</td>
-                        <td>7</td>
-                        <td>정지</td>
-                        <td>2023.12.31</td>
-                        <td>2023.12.31</td>
-                      </tr>
-                  </table>
-                
-                  <div class="page_wrap">
-                    <ul class="pagination">
-                        <li><a href="" class="first">처음 페이지</a></li>
-                        <li><a href="" class="arrow left"><</a></li>
-                        <li><a href="" class="active num">1</a></li>
-                        <li><a href="" class="num">2</a></li>
-                        <li><a href="" class="num">3</a></li>
-                        <li><a href="" class="num">4</a></li>
-                        <li><a href="" class="num">5</a></li>
-                        <li><a href="" class="num">6</a></li>
-                        <li><a href="" class="num">7</a></li>
-                        <li><a href="" class="num">8</a></li>
-                        <li><a href="" class="num">9</a></li>
-                        <li><a href="" class="num">10</a></li>
-                        <li><a href="" class="arrow right">></a></li>
-                        <li><a href="" class="last">마지막 페이지</a></li>
-                    </ul>
-                  </div>
             </section>
         </div>
     </main>
