@@ -6,7 +6,11 @@
     --black-txt-color:#000;
     --sub-bg-color:rgba(0, 0, 0, 0.88);
     --side-bar-color:#000;
-    --btn-bg-color:rgba(2, 178, 147, 0.44);
+
+    /* 버튼컬러 */
+    --btn-green-color:rgba(2, 178, 147, 0.44);
+    --btn-dark-color:#3e3e3e;
+
 
     
     /* 키컬러, 텍스트컬러 */

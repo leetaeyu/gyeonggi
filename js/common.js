@@ -189,6 +189,11 @@ $(function(){
             $(depth1A).eq(6).addClass("active");
             $(depth1A).eq(6).find(".depth2_wrap").addClass("active");
         }
+        else if (pageUrl.indexOf('meta_data') > -1) {
+            $(hD).addClass("ver2")
+            $(depth1A).eq(7).addClass("active");
+            $(depth1A).eq(7).find(".depth2_wrap").addClass("active");
+        }
 
     })
     

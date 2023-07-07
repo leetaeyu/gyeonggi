@@ -44,6 +44,22 @@
 .is-close {
     font-size: 0.875rem;
 }
+.is-darkgreen-btn {
+    display: inline-block;
+    padding:0.5rem 0.75rem;
+    color:var(--main-txt-color);
+    font-size:0.75rem;
+    border-radius: 0.625rem;
+    background-color: var(--btn-green-color);
+}
+.is-dark-btn {
+    display: inline-block;
+    padding:0.5rem 0.75rem;
+    color:var(--main-txt-color);
+    font-size:0.75rem;
+    border-radius: 0.625rem;
+    background-color: var(--btn-dark-color);
+}
 
 /* 로그인, 관리자, 비밀번호 재설정,찾기 */
 .login_container {
@@ -297,7 +313,7 @@ header {
 }
 
 /* 2depth */
-.monitoring, .big_data, .system, .basic, .facility, .record, .stats {
+.monitoring, .big_data, .system, .basic, .facility, .record, .stats, .meta_data {
     display:none;
 }
 .depth2_wrap.active {
@@ -405,6 +421,9 @@ header {
 .header.ver2 .stats {
     left:-50.2rem;
 }
+.header.ver2 .meta_data {
+    left:-58.2rem;
+}
 .header.ver2 .gnb{
     padding:0.5rem;
 }
@@ -447,39 +466,25 @@ main {
     font-size:0.75rem;
     font-weight: 300;
 }
-.side_btn {
-    padding:0.5rem 0.75rem;
-    color:var(--main-txt-color);
-    font-size:0.75rem;
-    border-radius: 0.625rem;
-    background-color: var(--btn-bg-color);
-}
 
 /* 박지훈 css 추가 */
 .main_section table {
     text-align: center;
 }
-
 .main_section table th {
     padding:1.9rem 0;
     background-color:var(--dark-color-500); 
 }
-
 .main_section table td {
     padding:1.9rem 0;
     background-color:var(--dark-color-600); 
     border-bottom: 1px solid #2e2e2e;
 }
-
-.table_btn_wrap { 
-    
-  }
-
 /* .selectBox {
     position: relative;
     margin-right:1rem;
-  }
-  .selectBox .select {
+}
+.selectBox .select {
     padding:0.5rem 2.9rem 0.5rem 0.9rem;
     background:var(--dark-color-500) url("../images/arrow.png") no-repeat 90% 50%;
     border-radius: 0.8rem;
@@ -490,80 +495,69 @@ main {
     -webkit-appearance:none; 
     -moz-appearance:none; 
     appearance:none /* 화살표 없애기 
-  } */
-
-  .cont-select {
+} */
+.cont-select {
     position: relative;
     margin-right: 1rem;
-  }
-  
-  .btn-select {
+}
+.btn-select {
     padding:0.5rem 2.9rem 0.5rem 0.9rem;
-    background:var(--dark-color-500) url("../images/arrow.png") no-repeat 90% 50%;
-    border-radius: 0.625rem;
     font-size: 0.8rem;
+    border-radius: 0.625rem;
     line-height: 1rem;
     border-radius: 0.625rem;
+    background:var(--dark-color-500) url("../images/arrow.png") no-repeat 90% 50%;
     cursor: pointer;
-  }
-  
-  .list-member {
+}
+.list-member {
     display: none;
     position: absolute;
-    width: 100%;
     top: 2rem;
     left: 0;
+    width: 100%;
     border-radius: 0.625rem;
     overflow: hidden;
-  }
-  
-  .btn-select.on+.list-member {
+}
+.btn-select.on+.list-member {
     display: block;
-  }
-  
-  .list-member li button {
+}
+.list-member li button {
     width:100%;
     padding: 0.5rem;
     border: none;
-    background-color:var(--dark-color-500);
-    cursor: pointer;
-    text-align: left;
     font-size: 0.8rem;
+    background-color:var(--dark-color-500);
     /* 말줄임 */
+    text-align: left;
     white-space: nowrap;
+    cursor: pointer;
     text-overflow: ellipsis;
     overflow: hidden;
-  }
-  
-  .list-member li button:hover,
-  .list-member li button:focus {
+}
+.list-member li button:hover, .list-member li button:focus {
     background-color:#000000;
-  }
-
-  .selectBox .select option {
-    background-color:var(--dark-color-500); 
-    color: #fff;
+}
+.selectBox .select option {
     font-size: 1rem;
-  }
-  
-  .table_btn_wrap > div { 
+    color: #fff;
+    background-color:var(--dark-color-500); 
+}
+.table_btn_wrap > div { 
     float:left; 
-  }
-  .table_btn_wrap .search {
+}
+.table_btn_wrap .search {
     float:right;
-  }
-
-  .table_btn_wrap .search div {
+}
+.table_btn_wrap .search div {
     float:left;
-  }
-
-  .calendar input { 
+}
+.calendar input { 
     padding: 0.5rem 0.9rem;
-    border-radius: 0.8rem;
     border:none;
+    border-radius: 0.8rem;
     outline: none;
     background-color:var(--dark-color-500); 
-   }
+}
 
    
 
