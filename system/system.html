@@ -269,18 +269,8 @@
                 <h2 class="blind">사용자 관리</h2>
 
                 <div class="table_btn_wrap">
-                    <!-- <div class="selectBox">
-                        <select name="test" class="select">
-                            <option disabled selected>상태 전체 <i class="arrow"></i></option>
-                            <option value="apple">test1</option>
-                            <option value="orange">test2</option>
-                            <option value="grape">test3</option>
-                            <option value="melon">test4</option>
-                        </select>
-                    </div> -->
-
                     <div class="cont-select">
-                        <button class="btn-select">상태 전체</button>
+                        <button class="btn-select">상태 전체 <i class="arrow"></i></button>
                         <ul class="list-member">
                           <li><button type="button">모잠비크</button></li>
                           <li><button type="button">스리랑카</button></li>
@@ -291,14 +281,18 @@
                     </div>
 
                     <div class="calendar">
-                        <input type="date" value="2023-07-06">&nbsp; ~ &nbsp;<input type="date" value="2023-07-06">
+                        <form>
+                            <input type="date" value="2023-07-06">&nbsp; ~ &nbsp;<input type="date" value="2023-07-06">
+                        </form>
                     </div>
 
                     <div class="search">
-                        <div>그룹명</div> 
-                        <input type="text" placeholder="검색어를 입력하세요.">
-                        <input type="button" value="검색">
-                        <input type="button" value="등록하기">
+                        <form>
+                            <div class="search_head">그룹명</div> 
+                            <input type="text" placeholder="검색어를 입력하세요." class="search_box">
+                            <input type="button" value="검색" class="search_box2">
+                            <input type="button" value="등록하기" class="search_box3">
+                        </form>
                     </div>
                 </div>
                 
