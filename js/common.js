@@ -203,6 +203,13 @@ $(function(){
         $(".depth2_wrap").toggleClass("close");
     })
 
+
+    //select toggle
+    const btn = $('.btn-select');
+    $(btn).on("click", function(e){
+        $(this).siblings(".list-member").toggleClass("on");
+    })
+
 })
 
 

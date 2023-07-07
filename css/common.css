@@ -449,6 +449,7 @@ main {
     width: 100%;
     max-width: 12rem;
     height: inherit;
+    min-height: 43.5rem;
     margin-top:1.5rem;
     background-color: var(--side-bar-color);
 }
@@ -472,6 +473,7 @@ main {
 }
 .side_txt {
     margin:1.5rem 0 2rem 0;
+    line-height: 1rem;
     font-size:0.75rem;
     font-weight: 300;
 }
@@ -502,7 +504,7 @@ main {
 .btn-select .arrow { 
     padding-left:2.75rem;
     background:url("../images/arrow.png") no-repeat 90% 55%;
- }
+}
 
 .list-member {
     display: none;
@@ -512,8 +514,9 @@ main {
     width: 100%;
     border-radius: 0.625rem;
     overflow: hidden;
+    z-index: 10;
 }
-.btn-select.on+.list-member {
+.list-member.on {
     display: block;
 }
 
@@ -592,7 +595,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color:var(--dark-color-600); 
     border-bottom: 1px solid #2e2e2e;
 }
-
 .page{
     text-align: center; 
 }
