@@ -503,7 +503,10 @@ main {
 .btn-select {
     padding:0.5rem 2.9rem 0.5rem 0.9rem;
     font-size: 0.8rem;
+    width:7.5rem;
+    background:var(--dark-color-500) url("../images/arrow.png") no-repeat 90% 50%;
     border-radius: 0.625rem;
+    font-size: 0.9rem;
     line-height: 1rem;
     border-radius: 0.625rem;
     background:var(--dark-color-500) url("../images/arrow.png") no-repeat 90% 50%;
@@ -529,6 +532,8 @@ main {
     background-color:var(--dark-color-500);
     /* 말줄임 */
     text-align: left;
+    font-size: 0.9rem;
+    /* 말줄임 */
     white-space: nowrap;
     cursor: pointer;
     text-overflow: ellipsis;
@@ -559,7 +564,20 @@ main {
     background-color:var(--dark-color-500); 
 }
 
+   input[type="date"]::-webkit-calendar-picker-indicator,
+   input[type="date"]::-webkit-inner-spin-button {
+        display: none;
+        appearance: none;
+    }
+
+   input[type="date"]::-webkit-calendar-picker-indicator {
+   display: block;
+    background: url('../images/arrow.png') no-repeat center; 
+  
+  
    
+   
+}
 
 
 
