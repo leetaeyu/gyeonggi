@@ -721,7 +721,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
 
-    #modal.modal-overlay {
+    .modal-overlay {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -738,21 +738,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
     #modal .modal-wrap {
         background: var(--white-bg-color);
-        backdrop-filter: blur( 13.5px );
-        -webkit-backdrop-filter: blur( 13.5px );
+        /* backdrop-filter: blur( 13.5px );
+        -webkit-backdrop-filter: blur( 13.5px ); */
         border-radius: 0.625rem;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
-        width: 650px;
-        height: 536px;
         position: relative;
-        padding: 0.625rem;
+        padding: 2rem;
+        width:46.75rem;
     }
     #modal .title {
         display: flex;
         justify-content:space-between;
         color: var(--black-txt-color);
         font-size:1rem;
-        font-weight: 600;;
+        font-weight: 600;
     }
     #modal .modal-close {
         cursor: pointer;
@@ -761,7 +760,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         height:0.875rem;
     }
     
-    #modal .madal-content {
+    #modal .modal-content {
         margin-top: 1.2rem;
         border:1px solid red;
         color: white;
@@ -769,6 +768,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     .modal-btn-select {  
         padding:0.5rem 0.625rem;
+        font-size:0.875rem;
         border:1px solid var(--line-color-100);
         color: var(--black-txt-color);
     }
@@ -779,11 +779,130 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         color: var(--black-txt-color); 
     };
 
-    .modal-search .modal-input { float:left; }
+    .modal-con1 { background: gold; width:400px; height:400px; }
+    
+    .modal_input1 { 
+        padding:0.625rem 3.75rem 0.625rem 0.75rem; 
+        border:1px solid var(--line-color-100);
+        color:var(--dark-color-200);
+        outline: none;
+    }
 
+    .modal_input2 { 
+        padding:0.625rem; 
+        color:var(--main-txt-color);
+        background-color:var(--dark-color-500);
+        outline: none;
+        cursor: pointer;
+    }
 
+    .modal-content .modal-table {
+        font-size:0.875rem; 
+        text-align: center;
+    }
+    
+    .modal-content table th { 
+        position: relative;
+        padding:1.125rem 0;
+        color:var(--main-txt-color) ;
+        background-color:var(--sub-color-500);
+    }
 
+    .modal-content table th::after { 
+        display: block;
+        position: absolute;
+        top: 1.4rem;
+        content: '';
+        width:0.0625rem;
+        height:1rem;
+        background-color: var(--white-bg-color);
+    }
 
+    .modal-content table th:first-child::after { 
+        display: none;
+    }
+
+    .modal-content table td { 
+        position: relative;
+        padding:1.125rem 0;
+        color:var(--black-txt-color) ;
+        border-bottom:1px solid var(--line-color-400);
+     }
+
+     .modal-content table td:first-child::after { 
+        display: none;
+    }
+
+     .modal-content table td::after { 
+        display: block;
+        position: absolute;
+        top: 1.4rem;
+        content: '';
+        width:0.0625rem;
+        height:1rem;
+        background-color: var(--line-color-400);
+    }
+
+    .modal_page_wrap .pagination {  }
+
+    .page_wrap {
+        text-align: center; 
+    }
+      
+      .pagination {
+        display: flex;
+        justify-content:center;
+        padding: 0;
+        margin: 2rem 0;
+    }
+      
+      .pagination li {
+        display: inline;
+        text-align: center;
+    }
+      
+      .pagination a {
+        float: left;
+        display: block;
+        font-size: 0.875rem;
+        padding: 0.3125rem 0.75rem;
+        color: #96a0ad;
+        line-height: 1.5;
+    }
+      
+      .first{
+        margin-right: 0.9375rem;}
+      
+      .last{
+        margin-left: 0.9375rem;}
+      
+      .first:hover, .last:hover, .left:hover, .right:hover{
+        color: var( --sub-color-500);}
+      
+      .pagination a.active {
+        cursor: default;
+        color: #ffffff;}
+      
+      .pagination a:active {
+        outline: none;
+       }
+      
+      .pagination .num {
+        margin-left: 0.1875rem;
+        padding: 0;
+        width: 1.875rem;
+        height: 1.875rem;
+        line-height: 1.875rem;
+        border-radius: 0.625rem;}
+      
+      .pagination .num:hover {
+        background-color:var(--key-color-600);
+        /* border:1px solid var(--key-color-600); */
+        color: #ffffff;}
+      
+      .pagination .num.active, .pagination .num:active {
+        background-color: var(--key-color-600);
+        cursor: pointer;}
 
 
 

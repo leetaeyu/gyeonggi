@@ -302,7 +302,7 @@
             </section>
 
 
-           
+           <!-- 모달 -->
             <div id="modal" class="modal-overlay">
                 <div class="modal-wrap">
                     <div class="title">
@@ -310,10 +310,10 @@
                         <div class="modal-close"></div>
                     </div>
                     
-                    <div class="madal-content">
-                        <div class="modal-search">
-                            <div class="cont-select">
-                                <button type="button" class="modal-btn-select modal-input">전체<i class="arrow_down"></i></button>
+                    <div class="modal-content">
+                        <div class="modal-con1">
+                            <div class="cont-select modal-select">
+                                <button type="button" class="btn-select modal-btn-select">전체<i class="arrow_down"></i></button>
                                 <ul class="list-member">
                                   <li><button type="button">모잠비크</button></li>
                                   <li><button type="button">스리랑카</button></li>
@@ -322,12 +322,106 @@
                                   <li><button type="button">판교</button></li>
                                 </ul>
                             </div>
-                            <input type="text" placeholder="그룹 설명을 입력하세요." class="modal-input">
+                            <div class="modal-input-wrap">
+                               <input type="text" placeholder="검색어 입력" class="modal_input1">
+                               <input type="button" value="검색" class="modal_input2">
+                            </div>
                         </div>
-                        
+
+                        <!-- 테이블 -->
+                        <table class="modal-table">
+                            <colgroup>
+                                <col style="width:10%">
+                                <col style="width:10%">
+                                <col style="width:40%">
+                                <col style="width:10%">
+                                <col style="width:10%">
+                                <col style="width:10%">
+                            </colgroup>
+                            <tr>
+                              <th scope="col">체크박스</td>
+                              <th scope="col">번호</td>
+                              <th scope="col">사용자 ID</td>
+                              <th scope="col">이름</td>
+                              <th scope="col">그룹</td>
+                              <th scope="col">사용자 상태</td>
+                            </tr>
+                           
+                              <tr>
+                                <td>6</td>
+                                <td>성남시</td>
+                                <td>교통정보센터장</td>
+                                <td>7</td>
+                                <td>정지</td>
+                                <td>2023.12.31</td>
+                               
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>성남시</td>
+                                <td>교통정보센터장</td>
+                                <td>7</td>
+                                <td>정지</td>
+                                <td>2023.12.31</td>
+                               
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>성남시</td>
+                                <td>교통정보센터장</td>
+                                <td>7</td>
+                                <td>정지</td>
+                                <td>2023.12.31</td>
+                               
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>성남시</td>
+                                <td>교통정보센터장</td>
+                                <td>7</td>
+                                <td>정지</td>
+                                <td>2023.12.31</td>
+                                
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>성남시</td>
+                                <td>교통정보센터장</td>
+                                <td>7</td>
+                                <td>정지</td>
+                                <td>2023.12.31</td>
+                               
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>성남시</td>
+                                <td>교통정보센터장</td>
+                                <td>7</td>
+                                <td>정지</td>
+                                <td>2023.12.31</td>
+                              
+                              </tr>
+                          </table>
+
+                          <div class="page_wrap modal_page_wrap">
+                            <ul class="pagination">
+                                <li><a href="#" class="first">처음 페이지</a></li>
+                                <li><a href="#" class="arrow left"><</a></li>
+                                <li><a href="#" class="active num">1</a></li>
+                                <li><a href="#" class="num">2</a></li>
+                                <li><a href="#" class="num">3</a></li>
+                                <li><a href="#" class="num">4</a></li>
+                                <li><a href="#" class="num">5</a></li>
+                               
+                                <li><a href="#" class="arrow right">></a></li>
+                                <li><a href="#" class="last">마지막 페이지</a></li>
+                            </ul>
+                          </div>
                     </div>
                 </div>
             </div>
+            <!-- 모달 -->
+
         </div>
     </main>
     <script>
