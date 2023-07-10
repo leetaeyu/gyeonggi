@@ -684,6 +684,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   
     /* 사용자 그룹 등록 */
     .group { 
+        position: relative;
         margin-bottom:2rem;
     }
 

@@ -13,7 +13,7 @@
 <body class="body-bg">
 <div id="skip" class="center">
     <a href="../index.html">메인페이지 바로가기</a>
-</div>
+</div>   
 <header class="header">
     <div class="header_container">
         <div class="logo_box">
@@ -265,7 +265,7 @@
             </div>
         </aside>
         <section class="main_section">
-            <h2 class="blind">권한 등록</h2>
+            <h2 class="blind">권한 수정</h2>
             <div class="contents_wrap">
                 <div class="group">
                     <div class="group_text">권한 이름 (필수)</div>
@@ -273,23 +273,57 @@
                 </div>
                 <div class="group">
                     <div class="flex_between mb10">
-                        <div class="group_text">대상</div>
+                        <div class="group_text">대상</div> 
                         <button type="button" class="is-darkgreen-btn">찾기</button>
                     </div>
                     <table>
                         <colgroup>
                             <col style="width:5%">
-                            <col style="width:95%">
+                            <col style="width:65%">
+                            <col style="width:10%">
+                            <col style="width:10%">
+                            <col style="width:10%">
                         </colgroup>
                         <tr>
                           <th>번호</th>
                           <th>사용자 ID</th>
+                          <th>이름</th>
+                          <th>그룹</th>
+                          <th>삭제</th>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>대상이 없습니다.</td>
+                            <td>1</td>
+                            <td>soonshin@kor.co.kr</td>
+                            <td>최순신</td>
+                            <td>김포시</td>
+                            <td><button type="button">삭제하기</button></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>soonshin@kor.co.kr</td>
+                            <td>하순신</td>
+                            <td>평택시</td>
+                            <td><button type="button">삭제하기</button></td>
                         </tr>
                     </table>
+                    <div class="page_wrap">
+                        <ul class="pagination">
+                            <li><a href="#" class="first">처음 페이지</a></li>
+                            <li><a href="#" class="arrow left"><</a></li>
+                            <li><a href="#" class="active num">1</a></li>
+                            <li><a href="#" class="num">2</a></li>
+                            <li><a href="#" class="num">3</a></li>
+                            <li><a href="#" class="num">4</a></li>
+                            <li><a href="#" class="num">5</a></li>
+                            <li><a href="#" class="num">6</a></li>
+                            <li><a href="#" class="num">7</a></li>
+                            <li><a href="#" class="num">8</a></li>
+                            <li><a href="#" class="num">9</a></li>
+                            <li><a href="#" class="num">10</a></li>
+                            <li><a href="#" class="arrow right">></a></li>
+                            <li><a href="#" class="last">마지막 페이지</a></li>
+                        </ul>
+                      </div>
                 </div>
                 <div class="group">
                     <div class="group_text">권한 설명</div>
