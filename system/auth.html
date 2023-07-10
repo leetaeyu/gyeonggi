@@ -267,9 +267,9 @@
             <section class="main_section">
                 <h2 class="blind">사용자 관리</h2>
 
-                <div class="table_btn_wrap">
+                <div class="table_btn_wrap clearfix">
                     <div class="cont-select">
-                        <button type="button" class="btn-select input_same">전체 메인 메뉴 <i class="arrow"></i></button>
+                        <button type="button" class="btn-select input_same">전체 <i class="arrow"></i></button>
                         <ul class="list-member">
                           <li><button type="button">test1</button></li>
                           <li><button type="button">test2</button></li>
@@ -279,11 +279,11 @@
                         </ul>
                     </div>
 
-                    <div class="search">
+                    <div class="search float-left">
                         <form>
                             <input type="text" placeholder="검색어를 입력하세요." class="input_same search_box">
                             <input type="button" value="검색" class="input_same search_box2">
-                            <input type="button" value="등록하기" class="input_same search_box2">
+                            <a href="auth_register.html" class="input_same search_box2">등록하기</a>
                         </form>
                     </div>
                 </div>
@@ -298,173 +298,93 @@
                         <col style="width:16.5%">
                     </colgroup>
                     <tr>
-                      <th scope="col">노출 순서</td>
-                      <th scope="col">메인 메뉴</td>
-                      <th scope="col">서브 메뉴</td>
-                      <th scope="col">URL 패턴</td>
-                      <th scope="col">URL</td>
-                      <th scope="col">노출 여부</td>
+                      <th scope="col">번호</td>
+                      <th scope="col">권한 이름</td>
+                      <th scope="col">권한 설명</td>
+                      <th scope="col">권한 보유자 수</td>
+                      <th scope="col">수정일</td>
+                      <th scope="col">등록일</td>
                     </tr>
-                    <tbody>
-                        <tr class="table_1depth">
-                            <td>1</td>
-                            <td>모니터링</td>
-                            <td>1개</td>
-                            <td>/dashboard/**</td>
-                            <td></td>
-                            <td>노출</td>
-                        </tr>
-                        <tr class="table_2depth">
-                            <td>1-1</td>
-                            <td></td>
-                            <td>교통상황</td>
-                            <td></td>
-                            <td>/dashboard/main</td>
-                            <td>노출</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr class="table_1depth">
-                            <td>2</td>
-                            <td>시스템관리</td>
-                            <td>3개</td>
-                            <td>/system/**</td>
-                            <td></td>
-                            <td>노출</td>
-                        </tr>
-                        <tr class="table_2depth">
-                            <td>2-1</td>
-                            <td></td>
-                            <td>사용자 관리</td>
-                            <td></td>
-                            <td>/system/main</td>
-                            <td>노출</td>
-                        </tr>
-                        <tr class="table_2depth">
-                            <td>2-2</td>
-                            <td></td>
-                            <td>운영 관리</td>
-                            <td></td>
-                            <td>/system/auth</td>
-                            <td>노출</td>
-                        </tr>
-                        <tr class="table_2depth">
-                            <td>2-3</td>
-                            <td></td>
-                            <td>메뉴 관리</td>
-                            <td></td>
-                            <td>/system/menu</td>
-                            <td>노출</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr class="table_1depth">
-                            <td>3</td>
-                            <td>기초정보관리</td>
-                            <td>1개</td>
-                            <td>/example1/**</td>
-                            <td></td>
-                            <td>노출</td>
-                        </tr>
-                        <tr class="table_2depth">
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr class="table_1depth">
-                            <td>4</td>
-                            <td>연계 시설물 관리</td>
-                            <td>1개</td>
-                            <td>/example2/**</td>
-                            <td></td>
-                            <td>노출</td>
-                        </tr>
-                        <tr class="table_2depth">
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr class="table_1depth">
-                            <td>5</td>
-                            <td>이력 관리</td>
-                            <td>1개</td>
-                            <td>/example1/**</td>
-                            <td></td>
-                            <td>노출</td>
-                        </tr>
-                        <tr class="table_2depth">
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr class="table_1depth">
-                            <td>6</td>
-                            <td>빅데이터분석</td>
-                            <td>1개</td>
-                            <td>/example4/**</td>
-                            <td></td>
-                            <td>노출</td>
-                        </tr>
-                        <tr class="table_2depth">
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr class="table_1depth">
-                            <td>7</td>
-                            <td>통계 리포트</td>
-                            <td>1개</td>
-                            <td>/example6/**</td>
-                            <td></td>
-                            <td>노출</td>
-                        </tr>
-                        <tr class="table_2depth">
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr class="table_1depth">
-                            <td>8</td>
-                            <td>메타 데이터 관리</td>
-                            <td>1개</td>
-                            <td>/example8/**</td>
-                            <td></td>
-                            <td>노출</td>
-                        </tr>
-                        <tr class="table_2depth">
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                            <td>test</td>
-                        </tr>
-                    </tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>최고 관리자</td>
+                        <td>최고 관리자</td>
+                        <td>1</td>
+                        <td>2023.12.31</td>
+                        <td>2023.12.31</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>일반 관리자</td>
+                        <td>일반 관리자</td>
+                        <td>3</td>
+                        <td>2023.12.31</td>
+                        <td>2023.12.31</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>일반 사용자</td>
+                        <td>일반 사용자</td>
+                        <td>5</td>
+                        <td>2023.12.31</td>
+                        <td>2023.12.31</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>외부관계 관리자</td>
+                        <td>외부관계 관리자</td>
+                        <td>2</td>
+                        <td>2023.12.31</td>
+                        <td>2023.12.31</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>내부관계 관리자</td>
+                        <td>내부관계 관리자</td>
+                        <td>2</td>
+                        <td>2023.12.31</td>
+                        <td>2023.12.31</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>지자체 관리자</td>
+                        <td>지자체 관리자</td>
+                        <td>6</td>
+                        <td>2023.12.31</td>
+                        <td>2023.12.31</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>교통정보 센터장</td>
+                        <td>교통정보 센터장</td>
+                        <td>1</td>
+                        <td>2023.12.31</td>
+                        <td>2023.12.31</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>외부연계 사용자</td>
+                        <td>외부연계 사용자</td>
+                        <td>7</td>
+                        <td>2023.12.31</td>
+                        <td>2023.12.31</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>내부연계 사용자</td>
+                        <td>내부연계 사용자</td>
+                        <td>4</td>
+                        <td>2023.12.31</td>
+                        <td>2023.12.31</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>지자체 사용자</td>
+                        <td>지자체 사용자</td>
+                        <td>10</td>
+                        <td>2023.12.31</td>
+                        <td>2023.12.31</td>
+                    </tr>
                   </table>
                 
                   <div class="page_wrap">

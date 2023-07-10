@@ -59,13 +59,24 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .center {
     text-align: center;
 }
-
-
+/* float 설계 */
+.float-left {
+    float: left !important;
+}
+.float-right {
+    float: right !important;
+}
 /* flex 설계 */
 .flex_center {
     display: flex;
     align-items: center;
-}/* 컬럼설계 */
+}
+.flex_between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 컬럼설계 */
 .col-2 > * {float:left; width:50%;}
 .col-3 > * {float:left; width:33.3333%;}
 .col-4 > * {float:left; width:25%;}
@@ -111,6 +122,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .pb64 {padding-bottom:4rem;}
 .pb72 {padding-bottom:4.5rem;}
 
+.pl0 {padding-left:0 !important;}
 .pl8 {padding-left:0.5rem;}
 .pl16 {padding-left:1rem;}
 .pl24 {padding-left:1.5rem;}
@@ -136,6 +148,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .mj_auto {margin:0 auto !important;}
 
 .mt8 {margin-top:0.5rem;}
+.mt10 {margin-top: 0.625rem;}
 .mt16 {margin-top:1rem;}
 .mt24 {margin-top:1.5rem;}
 .mt32 {margin-top:2rem;}
@@ -148,6 +161,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .mt88 {margin-top:5.5rem;}
 
 .mb8 {margin-bottom:0.5rem;}
+.mb10 {margin-bottom: 0.625rem;}
 .mb16 {margin-bottom:1rem;}
 .mb24 {margin-bottom:1.5rem;}
 .mb32 {margin-bottom:2rem;}

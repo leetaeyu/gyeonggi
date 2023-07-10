@@ -515,7 +515,7 @@ main {
     margin-right: 0.5rem;
 }
 .btn-select {
-    padding:0.55rem 0.625rem;
+    padding:0.5rem 0.625rem;
     cursor: pointer;
 }
 
@@ -592,7 +592,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color:var(--dark-color-500);
  }
 
- .search .search_box2 { 
+ .search .search_box2 {
+    color:var(--main-txt-color);
     background-color:var(--btn-green-color);
  }
 

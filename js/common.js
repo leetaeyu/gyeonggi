@@ -218,22 +218,30 @@ $(function(){
 
 
     // 모달 팝업 
-    const modal = document.getElementById("modal")
-    const btnModal = document.getElementById("btn-modal")
-    btnModal.addEventListener("click", e => {
-        modal.style.display = "flex"
-    })
+    // const modal = document.getElementById("modal")
+    // const btnModal = document.getElementById("btn-modal")
+    // btnModal.addEventListener("click", e => {
+    //     modal.style.display = "flex"
+    // })
 
-    const closeBtn = modal.querySelector(".modal-close")
-    closeBtn.addEventListener("click", e => {
-        modal.style.display = "none"
-    })
+    // const closeBtn = modal.querySelector(".modal-close")
+    // closeBtn.addEventListener("click", e => {
+    //     modal.style.display = "none"
+    // })
 
     //group_btn toggle
     const groupBtn = $(".group_btn_item");
     $(groupBtn).click(function(){
         $(this).toggleClass("is-darkgreen-btn");
-        console.log("타냐")
+    })
+    $(".all_selector").click(function(){
+        if (groupBtn.hasClass("is-darkgreen-btn")) {
+            $(this).removeClass("is-darkgreen-btn");
+            $(this).siblings().removeClass("is-darkgreen-btn");
+        } else {
+            $(this).addClass("is-darkgreen-btn");
+            $(this).siblings().addClass("is-darkgreen-btn");
+        }
     })
 
     //table 2depth
@@ -241,5 +249,6 @@ $(function(){
     $(table1Depth).click(function(){
         $(this).siblings("tr").toggleClass("active");
     })
+    
 })
 
