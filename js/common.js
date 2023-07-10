@@ -218,16 +218,14 @@ $(function(){
 
 
     // 모달 팝업 
-    // const modal = document.getElementById("modal")
-    // const btnModal = document.getElementById("btn-modal")
-    // btnModal.addEventListener("click", e => {
-    //     modal.style.display = "flex"
-    // })
+    $('#btn-modal').click(function(){
+        //alert('asd');
+        $('#modal').css('display','flex');
+    })
 
-    // const closeBtn = modal.querySelector(".modal-close")
-    // closeBtn.addEventListener("click", e => {
-    //     modal.style.display = "none"
-    // })
+    $('.modal-close').click(function(){
+        $('#modal').css('display','none');
+    })
 
     //group_btn toggle
     const groupBtn = $(".group_btn_item");

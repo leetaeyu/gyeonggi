@@ -510,22 +510,22 @@ main {
 .table_btn_wrap .search div {
     display:inline-block;
 }
-.cont-select {
+.cont_select {
     position: relative;
     display: inline-block; 
     margin-right: 0.5rem;
 }
-.btn-select {
+.btn_select {
     padding:0.5rem 0.625rem;
     cursor: pointer;
 }
 
-.btn-select .arrow { 
+.btn_select .arrow { 
     padding-left:2.75rem;
     background:url("../images/arrow.png") no-repeat 90% 55%;
 }
 
-.list-member {
+.list_member {
     display: none;
     position: absolute;
     top: 2.6rem;
@@ -535,11 +535,11 @@ main {
     overflow: hidden;
     z-index: 10;
 }
-.list-member.on {
+.list_member.on {
     display: block;
 }
 
-.list-member li button {
+.list_member li button {
     padding: 0.5rem;
     width:100%;
     border: none;
@@ -551,7 +551,7 @@ main {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.list-member li button:hover, .list-member li button:focus {
+.list_member li button:hover, .list_member li button:focus {
     background-color:var(--dark-color-600); 
 }
 .selectBox .select option {
@@ -727,12 +727,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         font-size: 0.9rem;
     }
 
-    .group .btn-select {  
+    .group .btn_select {  
         padding:0.5rem 0.625rem 0.5rem 0.625rem ;
         margin-top:0.625rem;
     }
 
-    .group .btn-select .arrow {
+    .group .btn_select .arrow {
         padding-left:8.5rem;
         background:url("../images/arrow.png") no-repeat 100% 55% ;
     }
@@ -743,7 +743,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
 
-    .modal-overlay {
+    .modal_overlay {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -758,7 +758,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         /* -webkit-backdrop-filter: blur(1.5px); */
         z-index: 99999;
     }
-    .modal-wrap {
+    .modal_wrap {
         background: var(--white-bg-color);
         /* backdrop-filter: blur( 13.5px );
         -webkit-backdrop-filter: blur( 13.5px ); */
@@ -775,7 +775,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         font-size:1rem;
         font-weight: 600;
     }
-    .modal-close {
+    .modal_close {
         cursor: pointer;
         background:url("../images/close.png") no-repeat center / cover;
         width:0.875rem;
@@ -787,14 +787,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         color: white;
     }
 
-    .modal-btn-select {  
+    .modal_btn_select {  
         padding:0.625rem;
         font-size:0.875rem;
         border:1px solid var(--line-color-100);
         color: var(--black-txt-color);
     }
 
-    .modal-select {
+    .modal_select {
         padding:0.625rem 0.625rem 0.625rem 0.625rem;
         font-size:0.875rem;
         border:1px solid var(--line-color-100);
@@ -802,17 +802,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         outline: none;
     }
 
-    .modal-btn-select .arrow_down {  
+    .modal_btn_select .arrow_down {  
         padding-left:3.375rem;
         background:url("../images/arrow_down.png") no-repeat 100% 55% / 20%;
         color: var(--black-txt-color); 
     }
 
-    .modal-con1 > div {
+    .modal_con1 > div {
         display: inline-block; 
     }
     
-    .modal-input-wrap input { 
+    .modal_input_wrap input { 
         font-size: 0.875rem;
      }
     
@@ -823,16 +823,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         outline: none;
     }
 
-    .modal-con1 .cont-select .list-member { 
+    .modal_con1 .cont_select .list_member { 
         border-radius: 0;
      }
 
-    .modal-con1 .cont-select .list-member li button {
+    .modal_con1 .cont_select .list_member li button {
         background-color:var(--white-bg-color);
         color:var(--black-color)
     }
 
-    .modal-con1 .cont-select .list-member li button:hover,.modal-con1 .cont-select .list-member li button:focus {
+    .modal_con1 .cont_select .list_member li button:hover,.modal_con1 .cont_select .list-member li button:focus {
         background-color:var(--sub-color-500);
         color:var(--main-txt-color)
     }
@@ -845,25 +845,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         cursor: pointer;
     }
     
-    .table-text-on { 
+    .table_text_on { 
         margin-top:1.5rem;
         font-size:0.875rem;
         color:var(--black-color);
     }
 
-    .modal-content .modal-table {
+    .modal_content .modal_table {
         font-size:0.875rem; 
         text-align: center;
     }
     
-    .modal-content table th { 
+    .modal_content table th { 
         position: relative;
         padding:1.125rem 0;
         color:var(--main-txt-color) ;
         background-color:var(--sub-color-500);
     }
 
-    .modal-content table th::after { 
+    .modal_content table th::after { 
         display: block;
         position: absolute;
         top: 1.4rem;
