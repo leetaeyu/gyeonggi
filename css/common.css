@@ -481,7 +481,7 @@ main {
 /* 박지훈 css 추가 */
 .table_btn_wrap > div { 
     margin-bottom: 0.5rem;
-    float:left; 
+    display: inline-block; 
 }
 .table_btn_wrap .search {
     float:right;
@@ -512,6 +512,7 @@ main {
 }
 .cont-select {
     position: relative;
+    display: inline-block; 
     margin-right: 0.5rem;
 }
 .btn-select {
@@ -527,7 +528,7 @@ main {
 .list-member {
     display: none;
     position: absolute;
-    top: 2rem;
+    top: 2.6rem;
     left: 0;
     width: 100%;
     border-radius: 0.625rem;
@@ -629,7 +630,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   
   .pagination {
     display: flex;
-    align-items: center;
+    justify-content: center;
     padding: 0;
     margin: 2rem 0;
 }
@@ -653,9 +654,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   
   .last{
     margin-left: 0.9375rem;}
-  
-  .first:hover, .last:hover, .left:hover, .right:hover{
-    color: #2e9cdf;}
+ 
   
   .pagination a.active {
     cursor: default;
@@ -749,7 +748,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         position: absolute;
         left: 0;
         top: 0;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -758,7 +757,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         /* -webkit-backdrop-filter: blur(1.5px); */
         z-index: 99999;
     }
-    #modal .modal-wrap {
+    .modal-wrap {
         background: var(--white-bg-color);
         /* backdrop-filter: blur( 13.5px );
         -webkit-backdrop-filter: blur( 13.5px ); */
@@ -768,40 +767,53 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         padding: 2rem;
         width:46.75rem;
     }
-    #modal .title {
+    .title {
         display: flex;
         justify-content:space-between;
         color: var(--black-txt-color);
         font-size:1rem;
         font-weight: 600;
     }
-    #modal .modal-close {
+    .modal-close {
         cursor: pointer;
         background:url("../images/close.png") no-repeat center / cover;
         width:0.875rem;
         height:0.875rem;
     }
     
-    #modal .modal-content {
+    .modal-content {
         margin-top: 1.2rem;
-        border:1px solid red;
         color: white;
     }
 
     .modal-btn-select {  
-        padding:0.5rem 0.625rem;
+        padding:0.625rem;
         font-size:0.875rem;
         border:1px solid var(--line-color-100);
         color: var(--black-txt-color);
+    }
+
+    .modal-select {
+        padding:0.625rem 0.625rem 0.625rem 0.625rem;
+        font-size:0.875rem;
+        border:1px solid var(--line-color-100);
+        color: var(--black-txt-color);
+        outline: none;
     }
 
     .modal-btn-select .arrow_down {  
         padding-left:3.375rem;
         background:url("../images/arrow_down.png") no-repeat 100% 55% / 20%;
         color: var(--black-txt-color); 
-    };
+    }
 
-    .modal-con1 { background: gold; width:400px; height:400px; }
+    .modal-con1 > div {
+        display: inline-block; 
+    }
+    
+    .modal-input-wrap input { 
+        font-size: 0.875rem;
+     }
     
     .modal_input1 { 
         padding:0.625rem 3.75rem 0.625rem 0.75rem; 
@@ -810,12 +822,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         outline: none;
     }
 
+    .modal-con1 .cont-select .list-member { 
+        border-radius: 0;
+     }
+
+    .modal-con1 .cont-select .list-member li button {
+        background-color:var(--white-bg-color);
+        color:var(--black-color)
+    }
+
+    .modal-con1 .cont-select .list-member li button:hover,.modal-con1 .cont-select .list-member li button:focus {
+        background-color:var(--sub-color-500);
+        color:var(--main-txt-color)
+    }
+
     .modal_input2 { 
         padding:0.625rem; 
         color:var(--main-txt-color);
         background-color:var(--dark-color-500);
         outline: none;
         cursor: pointer;
+    }
+    
+    .table-text-on { 
+        margin-top:1.5rem;
+        font-size:0.875rem;
+        color:var(--black-color);
     }
 
     .modal-content .modal-table {
@@ -865,69 +897,75 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         background-color: var(--line-color-400);
     }
 
-    .modal_page_wrap .pagination {  }
+    .modal-table input { 
+        accent-color:var( --sub-color-500);
+     }
 
-    .page_wrap {
+    .modal-page-wrap {
         text-align: center; 
     }
       
-      .pagination {
-        display: flex;
-        justify-content:center;
-        padding: 0;
-        margin: 2rem 0;
-    }
-      
-      .pagination li {
-        display: inline;
-        text-align: center;
-    }
-      
-      .pagination a {
-        float: left;
-        display: block;
-        font-size: 0.875rem;
-        padding: 0.3125rem 0.75rem;
-        color: #96a0ad;
-        line-height: 1.5;
-    }
-      
-      .first{
-        margin-right: 0.9375rem;}
-      
-      .last{
-        margin-left: 0.9375rem;}
-      
-      .first:hover, .last:hover, .left:hover, .right:hover{
-        color: var( --sub-color-500);}
-      
-      .pagination a.active {
-        cursor: default;
-        color: #ffffff;}
-      
-      .pagination a:active {
-        outline: none;
-       }
-      
-      .pagination .num {
-        margin-left: 0.1875rem;
-        padding: 0;
-        width: 1.875rem;
-        height: 1.875rem;
-        line-height: 1.875rem;
-        border-radius: 0.625rem;}
-      
-      .pagination .num:hover {
-        background-color:var(--key-color-600);
+     .modal-page-wrap .pagination .num:hover {
+        background-color:var(--sub-color-500);
         /* border:1px solid var(--key-color-600); */
         color: #ffffff;}
       
-      .pagination .num.active, .pagination .num:active {
-        background-color: var(--key-color-600);
-        cursor: pointer;}
+      .modal-page-wrap .pagination .num.active, .modal-page-wrap .pagination .num:active {
+        background-color: var(--sub-color-500);
+        cursor: pointer;
+        }
+      
+       .modal-btn { 
+            text-align: center;
+        }
 
+      .modal-btn input { 
+        padding:0.5rem 0.625rem;
+        font-size: 0.875rem;
+        border-radius:0.5rem;
+        border:none;
+        background-color: var(--sub-color-500); 
+        outline: none;
+      }
 
+      .title-color {
+        color:var( --sub-color-500);
+        font-weight:bold;
+      }
 
+      .input-list { 
+        display: inline-block;
+        width:43.1%;
+        margin:0 2.75rem 0.875rem 0;
+        vertical-align: top;
+        color:var(--black-txt-color);
+      }
+
+      .input-title { 
+        font-weight: bold;
+        font-size:0.875rem;
+       }
+      
+      .input-list input {
+        width:100%;
+        margin-top:0.825rem;
+        padding-bottom:0.5rem;
+        font-size:0.875rem;
+        border:none;
+        border-bottom: 1px solid var(--line-color-100);
+        color:var(--dark-color-400);
+        outline: none;
+      }
+
+      .input-sub-text {
+        font-size:0.75rem;
+        color: var(--dark-color-400);
+        opacity: 0.5;
+      }
+
+      .modal-btn {
+        margin-top:2rem;
+      }
 
 
 

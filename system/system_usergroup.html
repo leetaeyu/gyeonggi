@@ -209,6 +209,7 @@
                                 <li class="depth2_item"><a href="#"><img src="../images/depth2_text6.svg" alt="OpenAPI관리"><span>Open API 관리</span></a></li>
                             </ul>
                         </div>
+
                     </div>
                 </li>
                 <li class="depth1">
@@ -312,7 +313,7 @@
                     
                     <div class="modal-content">
                         <div class="modal-con1">
-                            <div class="cont-select modal-select">
+                            <div class="cont-select">
                                 <button type="button" class="btn-select modal-btn-select">전체<i class="arrow_down"></i></button>
                                 <ul class="list-member">
                                   <li><button type="button">모잠비크</button></li>
@@ -328,27 +329,30 @@
                             </div>
                         </div>
 
+                        <div class="table-text-on">
+                            선택된 사용자 수 : 선택된 사용자가 없습니다.
+                        </div>
                         <!-- 테이블 -->
                         <table class="modal-table">
                             <colgroup>
                                 <col style="width:10%">
                                 <col style="width:10%">
-                                <col style="width:40%">
-                                <col style="width:10%">
-                                <col style="width:10%">
-                                <col style="width:10%">
+                                <col style="width:30%">
+                                <col style="width:15%">
+                                <col style="width:15%">
+                                <col style="width:15%">
                             </colgroup>
                             <tr>
-                              <th scope="col">체크박스</td>
-                              <th scope="col">번호</td>
-                              <th scope="col">사용자 ID</td>
-                              <th scope="col">이름</td>
-                              <th scope="col">그룹</td>
-                              <th scope="col">사용자 상태</td>
+                              <th scope="col"><input type="checkbox"></th>
+                              <th scope="col">번호</th>
+                              <th scope="col">사용자 ID</th>
+                              <th scope="col">이름</th>
+                              <th scope="col">그룹</th>
+                              <th scope="col">사용자 상태</th>
                             </tr>
                            
                               <tr>
-                                <td>6</td>
+                                <td><input type="checkbox" ></td>
                                 <td>성남시</td>
                                 <td>교통정보센터장</td>
                                 <td>7</td>
@@ -357,7 +361,7 @@
                                
                               </tr>
                               <tr>
-                                <td>5</td>
+                                <td><input type="checkbox" ></td>
                                 <td>성남시</td>
                                 <td>교통정보센터장</td>
                                 <td>7</td>
@@ -366,7 +370,7 @@
                                
                               </tr>
                               <tr>
-                                <td>4</td>
+                                <td><input type="checkbox"></td>
                                 <td>성남시</td>
                                 <td>교통정보센터장</td>
                                 <td>7</td>
@@ -375,7 +379,7 @@
                                
                               </tr>
                               <tr>
-                                <td>3</td>
+                                <td><input type="checkbox" ></td>
                                 <td>성남시</td>
                                 <td>교통정보센터장</td>
                                 <td>7</td>
@@ -384,7 +388,7 @@
                                 
                               </tr>
                               <tr>
-                                <td>2</td>
+                                <td><input type="checkbox" ></td>
                                 <td>성남시</td>
                                 <td>교통정보센터장</td>
                                 <td>7</td>
@@ -393,7 +397,7 @@
                                
                               </tr>
                               <tr>
-                                <td>1</td>
+                                <td><input type="checkbox"></td>
                                 <td>성남시</td>
                                 <td>교통정보센터장</td>
                                 <td>7</td>
@@ -403,7 +407,7 @@
                               </tr>
                           </table>
 
-                          <div class="page_wrap modal_page_wrap">
+                          <div class="modal-page-wrap">
                             <ul class="pagination">
                                 <li><a href="#" class="first">처음 페이지</a></li>
                                 <li><a href="#" class="arrow left"><</a></li>
@@ -412,10 +416,13 @@
                                 <li><a href="#" class="num">3</a></li>
                                 <li><a href="#" class="num">4</a></li>
                                 <li><a href="#" class="num">5</a></li>
-                              
                                 <li><a href="#" class="arrow right">></a></li>
                                 <li><a href="#" class="last">마지막 페이지</a></li>
                             </ul>
+                          </div>
+                          
+                          <div class="modal-btn">
+                            <input type="button" value="확인">
                           </div>
                     </div>
                 </div>
