@@ -260,172 +260,231 @@
         <div class="main_container">
             <aside class="snb_container">
                 <div class="snb_wrap">
-                    <h3 class="side_title">사이드바 타이틀</h3>
-                    <div class="side_txt">사이드바 텍스트</div>
-                    <a href="#" class="is-darkgreen-btn">버튼내용</a>
+                    <h3 class="side_title">메뉴 관리</h3>
+                    <div class="side_txt">전체 메뉴를 관리할 수 있습니다.</div>
                 </div>
             </aside>
             <section class="main_section">
                 <h2 class="blind">사용자 관리</h2>
 
-                <div class="contents_wrap">
-                    <div class="group">
-                        <div class="group_text">그룹명 (필수)</div>
-                        <input type="text" placeholder="그룹명을 입력하세요." class="input_same group_box">
+                <div class="table_btn_wrap">
+                    <div class="cont-select">
+                        <button type="button" class="btn-select input_same">전체 메인 메뉴 <i class="arrow"></i></button>
+                        <ul class="list-member">
+                          <li><button type="button">test1</button></li>
+                          <li><button type="button">test2</button></li>
+                          <li><button type="button">test3</button></li>
+                          <li><button type="button">test4</button></li>
+                          <li><button type="button">test5</button></li>
+                        </ul>
                     </div>
-                    <div class="group">
-                        <div class="group_text">그룹설명</div>
-                        <input type="text" placeholder="그룹 설명을 입력하세요." class="input_same group_box">
-                    </div>
-                    <div class="group">
-                        <div class="group_text">그룹 사용자 (필수)</div>
-                        <input type="text" placeholder="그룹에 속할 사용자를 선택하세요." class="input_same group_box"> <input type="button" value="찾기" class="on_input_same" id="btn-modal">
-                    </div>
-                    <div class="group">
-                        <div class="group_text">그룹 설정 (필수)</div>
-                        <div class="cont-select">
-                            <button type="button" class="input_same btn-select">권한을 선택해 주세요. <i class="arrow"></i></button>
-                            <ul class="list-member">
-                              <li><button type="button">모잠비크</button></li>
-                              <li><button type="button">스리랑카</button></li>
-                              <li><button type="button">전주밥차</button></li>
-                              <li><button type="button">사인오케이</button></li>
-                              <li><button type="button">판교</button></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="group">
-                        <input type="button" value="등록" class="on_input_same search_box2">
-                        <input type="button" value="취소" class="input_same">
+
+                    <div class="search">
+                        <form>
+                            <input type="button" value="등록하기" class="input_same search_box2">
+                        </form>
                     </div>
                 </div>
+                
+                <table>
+                    <colgroup>
+                        <col style="width:16.5%">
+                        <col style="width:16.5%">
+                        <col style="width:16.5%">
+                        <col style="width:16.5%">
+                        <col style="width:16.5%">
+                        <col style="width:16.5%">
+                    </colgroup>
+                    <tr>
+                      <th scope="col">노출 순서</td>
+                      <th scope="col">메인 메뉴</td>
+                      <th scope="col">서브 메뉴</td>
+                      <th scope="col">URL 패턴</td>
+                      <th scope="col">URL</td>
+                      <th scope="col">노출 여부</td>
+                    </tr>
+                    <tbody>
+                        <tr class="table_1depth">
+                            <td>1</td>
+                            <td>모니터링</td>
+                            <td>1개</td>
+                            <td>/dashboard/**</td>
+                            <td></td>
+                            <td>노출</td>
+                        </tr>
+                        <tr class="table_2depth">
+                            <td>1-1</td>
+                            <td></td>
+                            <td>교통상황</td>
+                            <td></td>
+                            <td>/dashboard/main</td>
+                            <td>노출</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="table_1depth">
+                            <td>2</td>
+                            <td>시스템관리</td>
+                            <td>3개</td>
+                            <td>/system/**</td>
+                            <td></td>
+                            <td>노출</td>
+                        </tr>
+                        <tr class="table_2depth">
+                            <td>2-1</td>
+                            <td></td>
+                            <td>사용자 관리</td>
+                            <td></td>
+                            <td>/system/main</td>
+                            <td>노출</td>
+                        </tr>
+                        <tr class="table_2depth">
+                            <td>2-2</td>
+                            <td></td>
+                            <td>운영 관리</td>
+                            <td></td>
+                            <td>/system/auth</td>
+                            <td>노출</td>
+                        </tr>
+                        <tr class="table_2depth">
+                            <td>2-3</td>
+                            <td></td>
+                            <td>메뉴 관리</td>
+                            <td></td>
+                            <td>/system/menu</td>
+                            <td>노출</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="table_1depth">
+                            <td>3</td>
+                            <td>기초정보관리</td>
+                            <td>1개</td>
+                            <td>/example1/**</td>
+                            <td></td>
+                            <td>노출</td>
+                        </tr>
+                        <tr class="table_2depth">
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="table_1depth">
+                            <td>4</td>
+                            <td>연계 시설물 관리</td>
+                            <td>1개</td>
+                            <td>/example2/**</td>
+                            <td></td>
+                            <td>노출</td>
+                        </tr>
+                        <tr class="table_2depth">
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="table_1depth">
+                            <td>5</td>
+                            <td>이력 관리</td>
+                            <td>1개</td>
+                            <td>/example1/**</td>
+                            <td></td>
+                            <td>노출</td>
+                        </tr>
+                        <tr class="table_2depth">
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="table_1depth">
+                            <td>6</td>
+                            <td>빅데이터분석</td>
+                            <td>1개</td>
+                            <td>/example4/**</td>
+                            <td></td>
+                            <td>노출</td>
+                        </tr>
+                        <tr class="table_2depth">
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="table_1depth">
+                            <td>7</td>
+                            <td>통계 리포트</td>
+                            <td>1개</td>
+                            <td>/example6/**</td>
+                            <td></td>
+                            <td>노출</td>
+                        </tr>
+                        <tr class="table_2depth">
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="table_1depth">
+                            <td>8</td>
+                            <td>메타 데이터 관리</td>
+                            <td>1개</td>
+                            <td>/example8/**</td>
+                            <td></td>
+                            <td>노출</td>
+                        </tr>
+                        <tr class="table_2depth">
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                
+                  <div class="page_wrap">
+                    <ul class="pagination">
+                        <li><a href="#" class="first">처음 페이지</a></li>
+                        <li><a href="#" class="arrow left"><</a></li>
+                        <li><a href="#" class="active num">1</a></li>
+                        <li><a href="#" class="num">2</a></li>
+                        <li><a href="#" class="num">3</a></li>
+                        <li><a href="#" class="num">4</a></li>
+                        <li><a href="#" class="num">5</a></li>
+                        <li><a href="#" class="num">6</a></li>
+                        <li><a href="#" class="num">7</a></li>
+                        <li><a href="#" class="num">8</a></li>
+                        <li><a href="#" class="num">9</a></li>
+                        <li><a href="#" class="num">10</a></li>
+                        <li><a href="#" class="arrow right">></a></li>
+                        <li><a href="#" class="last">마지막 페이지</a></li>
+                    </ul>
+                  </div>
             </section>
-
-
-           <!-- 모달 -->
-            <div id="modal" class="modal-overlay">
-                <div class="modal-wrap">
-                    <div class="title">
-                        <h2>대상 찾기</h2>
-                        <div class="modal-close"></div>
-                    </div>
-                    
-                    <div class="modal-content">
-                        <div class="modal-con1">
-                            <div class="cont-select modal-select">
-                                <button type="button" class="btn-select modal-btn-select">전체<i class="arrow_down"></i></button>
-                                <ul class="list-member">
-                                  <li><button type="button">모잠비크</button></li>
-                                  <li><button type="button">스리랑카</button></li>
-                                  <li><button type="button">전주밥차</button></li>
-                                  <li><button type="button">사인오케이</button></li>
-                                  <li><button type="button">판교</button></li>
-                                </ul>
-                            </div>
-                            <div class="modal-input-wrap">
-                               <input type="text" placeholder="검색어 입력" class="modal_input1">
-                               <input type="button" value="검색" class="modal_input2">
-                            </div>
-                        </div>
-
-                        <!-- 테이블 -->
-                        <table class="modal-table">
-                            <colgroup>
-                                <col style="width:10%">
-                                <col style="width:10%">
-                                <col style="width:40%">
-                                <col style="width:10%">
-                                <col style="width:10%">
-                                <col style="width:10%">
-                            </colgroup>
-                            <tr>
-                              <th scope="col">체크박스</td>
-                              <th scope="col">번호</td>
-                              <th scope="col">사용자 ID</td>
-                              <th scope="col">이름</td>
-                              <th scope="col">그룹</td>
-                              <th scope="col">사용자 상태</td>
-                            </tr>
-                           
-                              <tr>
-                                <td>6</td>
-                                <td>성남시</td>
-                                <td>교통정보센터장</td>
-                                <td>7</td>
-                                <td>정지</td>
-                                <td>2023.12.31</td>
-                               
-                              </tr>
-                              <tr>
-                                <td>5</td>
-                                <td>성남시</td>
-                                <td>교통정보센터장</td>
-                                <td>7</td>
-                                <td>정지</td>
-                                <td>2023.12.31</td>
-                               
-                              </tr>
-                              <tr>
-                                <td>4</td>
-                                <td>성남시</td>
-                                <td>교통정보센터장</td>
-                                <td>7</td>
-                                <td>정지</td>
-                                <td>2023.12.31</td>
-                               
-                              </tr>
-                              <tr>
-                                <td>3</td>
-                                <td>성남시</td>
-                                <td>교통정보센터장</td>
-                                <td>7</td>
-                                <td>정지</td>
-                                <td>2023.12.31</td>
-                                
-                              </tr>
-                              <tr>
-                                <td>2</td>
-                                <td>성남시</td>
-                                <td>교통정보센터장</td>
-                                <td>7</td>
-                                <td>정지</td>
-                                <td>2023.12.31</td>
-                               
-                              </tr>
-                              <tr>
-                                <td>1</td>
-                                <td>성남시</td>
-                                <td>교통정보센터장</td>
-                                <td>7</td>
-                                <td>정지</td>
-                                <td>2023.12.31</td>
-                              
-                              </tr>
-                          </table>
-
-                          <div class="page_wrap modal_page_wrap">
-                            <ul class="pagination">
-                                <li><a href="#" class="first">처음 페이지</a></li>
-                                <li><a href="#" class="arrow left"><</a></li>
-                                <li><a href="#" class="active num">1</a></li>
-                                <li><a href="#" class="num">2</a></li>
-                                <li><a href="#" class="num">3</a></li>
-                                <li><a href="#" class="num">4</a></li>
-                                <li><a href="#" class="num">5</a></li>
-                               
-                                <li><a href="#" class="arrow right">></a></li>
-                                <li><a href="#" class="last">마지막 페이지</a></li>
-                            </ul>
-                          </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 모달 -->
-
         </div>
     </main>
-    <script>
-       
-    </script>
 </body>
 </html>

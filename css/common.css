@@ -44,14 +44,6 @@
 .is-close {
     font-size: 0.875rem;
 }
-.is-darkgreen-btn {
-    display: inline-block;
-    padding:0.5rem 0.75rem;
-    color:var(--main-txt-color);
-    font-size:0.75rem;
-    border-radius: 0.625rem;
-    background-color: var(--btn-green-color);
-}
 .is-dark-btn {
     display: inline-block;
     padding:0.5rem 0.75rem;
@@ -59,6 +51,14 @@
     font-size:0.75rem;
     border-radius: 0.625rem;
     background-color: var(--btn-dark-color);
+}
+.is-darkgreen-btn {
+    display: inline-block;
+    padding:0.5rem 0.75rem;
+    color:var(--main-txt-color);
+    font-size:0.75rem;
+    border-radius: 0.625rem;
+    background-color: var(--btn-green-color);
 }
 /* 로그인, 관리자, 비밀번호 재설정,찾기 */
 .login_container {
@@ -608,9 +608,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color:var(--dark-color-600); 
     border-bottom: 1px solid #2e2e2e;
 }
-
+.table_1depth {
+    cursor: pointer;
+}
+.main_section table .table_2depth {
+    display: none;
+}
+.main_section table .table_2depth.active {
+    display:table-row;
+}
+.main_section table .table_2depth td {
+    background-color: var(--table-2depth-color);
+}
 .page_wrap {
-    text-align: center; 
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
 }
   
   .pagination {
@@ -694,7 +707,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
        position: absolute;
        bottom: 0;
     }
-
+    .group_ex {
+        display: block;
+        padding:0.5rem 0 0 0.5rem;
+        line-height: 1rem;
+        font-size:0.75rem;
+    }
+    .group_btn {
+        margin-top:1rem;
+    }
     .group .search_box {
         margin-top:1rem;
         padding:0.5rem 0.625rem;

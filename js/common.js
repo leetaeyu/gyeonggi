@@ -215,7 +215,7 @@ $(function(){
     $('.btn-select').on("click", function(e){
         $(this).siblings(".list-member").toggleClass("on");
     })
-    
+
 
     // 모달 팝업 
     const modal = document.getElementById("modal")
@@ -223,11 +223,23 @@ $(function(){
     btnModal.addEventListener("click", e => {
         modal.style.display = "flex"
     })
-    
+
     const closeBtn = modal.querySelector(".modal-close")
     closeBtn.addEventListener("click", e => {
         modal.style.display = "none"
     })
 
-})    
+    //group_btn toggle
+    const groupBtn = $(".group_btn_item");
+    $(groupBtn).click(function(){
+        $(this).toggleClass("is-darkgreen-btn");
+        console.log("타냐")
+    })
+
+    //table 2depth
+    const table1Depth = $(".table_1depth");
+    $(table1Depth).click(function(){
+        $(this).siblings("tr").toggleClass("active");
+    })
+})
 

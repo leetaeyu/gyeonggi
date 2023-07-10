@@ -248,7 +248,7 @@
                     <div class="depth2_wrap meta_data">
                         <div class="depth2_item_box">
                             <ul class="depth2_box">
-                                <li class="depth2_item"><a href="#"><img src="../images/depth2_text1.png" alt="메타데이터관리"><span>메타데이터 관리</span></a></li>
+                                <li class="depth2_item"><a href="meta_data.html"><img src="../images/depth2_text1.png" alt="메타데이터관리"><span>메타데이터 관리</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -267,8 +267,59 @@
             </aside>
             <section class="main_section">
                 <h2 class="blind">메타데이터 상세</h2>
-
-
+                <div class="contents_wrap">
+                    <div class="group">
+                        <div class="group_text">데이터셋 아이디</div>
+                        <input type="text" placeholder="(ex) tdlal2-1321-blsad" class="input_same group_box">
+                    </div>
+                    <div class="group">
+                        <div class="group_text">서비스 이름</div>
+                        <input type="text" placeholder="(ex) bus-station-master" class="input_same group_box">
+                    </div>
+                    <div class="group">
+                        <div class="group_text">분류체계</div>
+                        <input type="text" placeholder="(ex) 대중교통 소통정보" class="input_same group_box">
+                    </div>
+                    <div class="group">
+                        <div class="group_text">유관기관</div>
+                        <input type="text" placeholder="(ex) 경기도" class="input_same group_box">
+                    </div>
+                    <div class="group">
+                        <div class="group_text">원본 데이터 이름</div>
+                        <input type="text" placeholder="(ex) GG-bus-station" class="input_same group_box">
+                    </div>
+                    <div class="group">
+                        <div class="group_text">데이터 유형</div>
+                        <input type="text" placeholder="(ex) meta-data, master-data" class="input_same group_box">
+                        <span class="group_ex">데이터 유형은 ".(comma)"로 구분합니다.<br> (ex) meta-data, master-data</span>
+                    </div>
+                    <div class="group">
+                        <div class="group_text">데이터 키워드</div>
+                        <input type="text" placeholder="(ex) 정류소 명칭, 중앙차로 여부" class="input_same group_box">
+                        <span class="group_ex">데이터 유형은 ".(comma)"로 구분합니다.<br> (ex) 정류소 명칭, 버스 노선 명칭</span>
+                    </div>
+                    <div class="group">
+                        <div class="group_text">데이터 수집 유형</div>
+                        <div class="group_btn">
+                            <button type="button" class="group_btn_item is-dark-btn">JSON</button>
+                            <button type="button" class="group_btn_item is-dark-btn">HWP</button>
+                            <button type="button" class="group_btn_item is-dark-btn">CSV</button>
+                            <button type="button" class="group_btn_item is-dark-btn">PDF</button>
+                            <button type="button" class="group_btn_item is-dark-btn">TXT</button>
+                            <button type="button" class="group_btn_item is-dark-btn">XML</button>
+                            <button type="button" class="group_btn_item is-dark-btn">ZIP</button>
+                            <button type="button" class="group_btn_item is-dark-btn">기타</button>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="group_text">데이터 설명</div>
+                        <input type="text" placeholder="(ex) 경기도 BIS 데이터베이스" class="input_same group_box">
+                    </div>
+                    <div class="group">
+                        <input type="button" value="등록" class="on_input_same search_box2">
+                        <input type="button" value="취소" class="input_same">
+                    </div>
+                </div>
             </section>
         </div>
     </main>
